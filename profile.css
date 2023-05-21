@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #0f1010;
+  background-image: linear-gradient(160deg, #0f1010 0%, #0c0e29 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-decoration: none;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background: url(./images/snow.png);
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #0f1010;
+  background-image: linear-gradient(160deg, #080b0e 0%, #0c1429 100%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 30px 0 40px;
+  border-radius: 20px;
+  width: 550px;
+}
+.image {
+  display: inline-block;
+  width: 175px;
+  height: 175px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+.image::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #243B55;
+  background-image: linear-gradient(160deg, #3b4c7a 0%, #0c233b 100%);
+  position: absolute;
+  z-index: -2;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+.card:hover .image::before {
+  height: 100%;
+}
+.image::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #243B55;
+  background-image: linear-gradient(160deg, #3b4c7a 0%, #0c233b 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+.card:hover .image img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+.name {
+  color: #fff;
+}
+.title {
+  display: block;
+  margin-top: -15px;
+  font-size: 15px;
+  color: #838383;
+  text-transform: capitalize;
+}
+.social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #3b4c7a;
+  background-image: linear-gradient(160deg, #3b4c7a 0%, #0c233b 100%);
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+.card:hover .social {
+  bottom: 0;
+}
+.social li {
+  display: inline-block;
+}
+.social li i {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+.social li i:hover {
+  cursor: pointer;
+}
+.tiktok{
+    background: linear-gradient(to right, #232526, #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.youtube{
+    background: linear-gradient(to right, #e52d27, #b31217); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.instagram{
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.twitter{
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.youtube:hover{
+    background: linear-gradient(to right, #200122, #6f0000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.twitter:hover{
+    background: linear-gradient(to right, #000046, #1cb5e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.instagram:hover{
+      background: linear-gradient(to right, #23074d, #cc5333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.tiktok:hover{
+    background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+a{
+    text-decoration: none;
+}
