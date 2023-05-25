@@ -9,28 +9,30 @@
 }
 
 header{
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 1000;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 33px 9%;
+    height: 2rem;
     background: transparent;
-    background: gray;
+    background: #555555;
     position: relative;
+   
 }
 
 
-
+.logo > img{
+    width: 100%;
+    height: ;
+}
 
 
 .navlist{
    display: flex; 
    right: 7%;
    position: absolute;
+   gap: 2rem;
+   background: #555555;
    
 }
 .navlist a{
