@@ -24,19 +24,13 @@ header{
 }
 
 
-.logo img{
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-    font-size: 18px;
-}
 
 
 
 .navlist{
    display: flex; 
-   
+   right: 7%;
+   position: absolute;
    
 }
 .navlist a{
@@ -172,8 +166,62 @@ section{
 }
 .container{
     display: inline-block;
+    margin-top: 400px;
+}
+
+.heading{
+    position: relative;
+}
+
+.heading-img{
+    width: 1200px;
+    height: auto;
+    margin-top: 200px;
     
 }
+
+.heading-text1{
+    font-size: 46px;
+    text-transform: uppercase;
+}
+
+.heading-text{
+    position: absolute;
+    bottom: 33%;
+    right: 27%;
+}
+
+.heading-text2{
+    font-size: 19.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .card {
   display: inline-block;
   flex-direction: column;
