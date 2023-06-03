@@ -184,3 +184,8 @@ html {
     color: #24fe41;
     
   }
+
+  .submit{
+    background: none;
+    border: none;
+  }
