@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dutch.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@200;400;600;800&family=Tomorrow:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="/dutch.js" defer></script>
+</head>
+<body>
+
+    
+    
+
+    <section id="js--checkOutWindow" class="checkOut a-popup">
+        <ul class="checkOut__list">
+            <li class="checkOut__listItem">
+                <img src="/img/banknotes1.png" alt="champagne" class="checkOut__image">
+                <p class="checkOut__title">100 Gulden "Snip" 1977 ZFr+</p>
+                <p id="js--amount-champagne1" class="checkOut__amount"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="/img/banknotes2.png" alt="champagne" class="checkOut__image">
+                <p class="checkOut__title">Netherlands 1000 Gulden Banknote 1972, Aunc</p>
+                <p id="js--amount-champagne2" class="checkOut__amount"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="/img/banknotes3.png" alt="champagne" class="checkOut__image">
+                <p class="checkOut__title">Banknote China 10 Yen - Dragon - ND (1939) - F to VF - P.M20</p>
+                <p id="js--amount-champagne3" class="checkOut__amount"></p>
+            </li>
+        </ul>
+    </section>
+    <article class="modal a-popup" id="js--shoppingModal">
+        ✓ Added to Cart
+    </article>
+    <button id="js--checkOutButton" class="shoppingCart">
+        🛒
+    <div class="shoppingCart__message">0</div>
+    </button>
+    <main>
+        <ul class="games">
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="/img/banknotes1.png" alt="champagne" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€499,99</h2>
+                    <h3 class="games__h3">100 Gulden "Snip" 1977 ZFr+</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="champagne1" class="games__button">Add to Cart</button>
+                    <a href="/productpage.html"><button class="game__button">Details</button></a>
+                    <a href="/productpage1.html"><button class="game__button">Go back</button></a>
+                </section>
+                
+            </li>
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="/img/banknotes2.png" alt="champagne" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€519,99</h2>
+                    <h3 class="games__h3">Netherlands 1000 Gulden Banknote 1972, Aunc</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="champagne2" class="games__button">Add to Cart</button>
+                    <a href="/productpage.html"><button class="game__button">Details</button></a>
+                    <a href="/productpage1.html"><button class="game__button">Go back</button></a>
+                 </section>
+            </li>
+            <li class="games__game games__game--third a-popup">
+                <figure class="game__figure"><img src="/img/banknotes3.png" alt="champagne" class="game__img"></figure>
+                <section class="games__body"> 
+                    <h2 class="games__h2">€349,99</h2>
+                    <h3 class="games__h3">Banknote China 10 Yen - Dragon - ND (1939) - F to VF - P.M20</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="champagne3" class="games__button">Add to Cart</button>
+                    <a href="/productpage.html"><button class="game__button">Details</button></a>
+                    <a href="/productpage1.html"><button class="game__button">Go back</button></a>
+                </section>
+            </li>
+        </ul>
+    </main>
+</body>
+</html> 
