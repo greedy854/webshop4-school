@@ -1,11 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
-a:link { text-decoration: none; }
-body{
+
+a:link {
+    text-decoration: none;
+}
+
+body {
     background: white;
 }
 
@@ -22,12 +26,12 @@ header {
     background: transparent;
     background: #555555;
     position: relative;
-    
+
 }
 
 
 .logo {
-    width: 250%;
+    width: 350%;
     height: 210%;
     display: flex;
 }
@@ -65,25 +69,28 @@ header {
     cursor: pointer;
     display: none;
 }
-.about{
+
+.about {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.about .content img{
+
+.about .content img {
     height: auto;
     width: 600px;
     max-width: 100%;
 }
 
-.text{
+.text {
     width: 550px;
     max-width: 100%;
     padding: 0 10px;
 }
-.content{
+
+.content {
     width: 1280px;
     max-width: 95%;
     margin: 0 auto;
@@ -92,14 +99,15 @@ header {
     align-items: center;
     justify-content: space-around;
 }
-.text h1{
+
+.text h1 {
     color: #ffcc74;
     font-size: 85px;
     margin-bottom: 20px;
     text-transform: capitalize;
 }
 
-.text h5{
+.text h5 {
     color: black;
     font-size: 25px;
     margin-bottom: 25px;
@@ -107,14 +115,15 @@ header {
     letter-spacing: 2px;
 }
 
-.text p{
+.text p {
     color: black;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 1px;
     margin-bottom: 45px;
 }
-.about button{
+
+.about button {
     background: #ffcc74;
     color: black;
     border: 2px solid transparent;
@@ -137,7 +146,7 @@ header {
     outline: none;
 }
 
-.about button:hover{
+.about button:hover {
     transform: scale(1.2);
     background-color: transparent;
     border: 2px solid #ffcc74;
@@ -146,23 +155,24 @@ header {
     cursor: pointer;
 }
 
-li{
+li {
     list-style: none;
 }
 
-footer{
+footer {
     width: 100%;
     position: absolute;
     /* bottom: 0;weghalen als niet werkt*/
-    background: linear-gradient(to right, #00093c, #2d0b00);
+    background: linear-gradient(to right, #232526, #414345);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
-    padding: 100px 0 30px ;
+    padding: 100px 0 30px;
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
 }
 
-.row{
+.row {
     width: 85%;
     margin: auto;
     display: flex;
@@ -170,42 +180,47 @@ footer{
     align-items: center;
     justify-content: center;
 }
-.col{
+
+.col {
     flex-basis: 25%;
     padding: 10px;
 }
 
-.col:nth-child(2), .col:nth-child(3){
+.col:nth-child(2),
+.col:nth-child(3) {
     flex-basis: 15%;
 }
 
-.logo{
+.logo {
     width: 80px;
     margin-bottom: 30px;
+    margin-left: -23px;
 }
-   
-.col h3{
+
+.col h3 {
     width: fit-content;
     margin-bottom: 40px;
     position: relative;
 }
-.email-id{
+
+.email-id {
     width: fit-content;
     border-bottom: 1px solid #ccc;
     margin: 20px 0;
 }
 
-ul li{
+ul li {
     list-style: none;
     margin-bottom: 12px;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: #fff;
 }
 
-form{
+
+form {
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -215,12 +230,12 @@ form{
     gap: 1rem;
 }
 
-form .fas{
+form .fas {
     font-size: 18px;
     margin-right: 10px;
 }
 
-form input{
+form input {
     width: 100%;
     background: transparent;
     color: #ccc;
@@ -236,12 +251,12 @@ form button {
 
 }
 
-form button .fas{
+form button .fas {
     font-size: 16px;
-    color:#ccc;
+    color: #ccc;
 }
 
-.social-icons .fab{
+.social-icons .fab {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -254,21 +269,29 @@ form button .fas{
     cursor: pointer;
 }
 
-hr{
+.social-icons:hover {
+    cursor: pointer;
+}
+
+.social-icons a {
+    color: white;
+}
+
+hr {
     width: 90%;
     border: 0;
     border-bottom: 1px solid #ccc;
     margin: 20px auto;
 }
 
-.copyright{
+.copyright {
     text-align: center;
 }
 
-.underline{
+.underline {
     width: 100%;
     height: 5px;
-    background: #767676;
+    background: #39b54a;
     border-radius: 3px;
     position: absolute;
     top: 25px;
@@ -276,10 +299,14 @@ hr{
     overflow: hidden;
 }
 
-.underline span{
+a:hover {
+    border-bottom: 2px solid #39b54a;
+}
+
+.underline span {
     width: 15px;
     height: 100%;
-    background: #fff;
+    background: #ffdf4f;
     border-radius: 3px;
     position: absolute;
     top: 0;
@@ -288,46 +315,51 @@ hr{
 }
 
 
-@keyframes moving{
-    0%{
+@keyframes moving {
+    0% {
         left: -20px
     }
-    100%{
+
+    100% {
         left: 100%;
     }
 
 }
-    
-button i{
+
+button i {
     color: #ccc;
 }
 
 @media (max-width:700px) {
-    footer{
+    footer {
         bottom: unset;
     }
-    .col{
+
+    .col {
         flex-basis: 100%;
-        
+
     }
-    
-    .col:nth-child(2), .col:nth-child(3){
+
+    .col:nth-child(2),
+    .col:nth-child(3) {
         flex-basis: 100%;
     }
 }
 
 @media screen and (max-width: 1180px) {
-    .about{
+    .about {
         width: 100%;
         height: auto;
         padding: 70px 0;
     }
 }
+
 @media screen and (max-width: 650px) {
-    .about .content img{
+    .about .content img {
         margin-bottom: 35px;
     }
-    .text h1{
+
+    .text h1 {
         font-size: 60px;
         margin-bottom: 25px;
     }

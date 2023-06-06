@@ -8,8 +8,12 @@
 
 }
 
-html{
+html {
     font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 header {
@@ -17,11 +21,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 9rem;
+    height: 5rem;
     background: transparent;
     background: #555555;
     position: relative;
-    
+
 }
 
 
@@ -33,12 +37,15 @@ header {
 
 
 .navlist {
+    width: 100%;
     display: flex;
-    right: 7%;
-    position: absolute;
-    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    height: 9rem;
+    background: transparent;
     background: #555555;
-
+    position: relative;
+    padding: 4rem;
 }
 
 .navlist a {
@@ -166,9 +173,17 @@ section {
 }
 
 .scroll-down {
-    position: absolute;
+    position: fixed ;
     bottom: 6%;
     right: 9%;
+   
+}
+
+.scroll-down::after {
+    position: fixed ;
+    bottom: 6%;
+    right: 9%;
+    content: '';
 }
 
 .scroll-down i {
@@ -178,7 +193,7 @@ section {
     color: #ffdf4f;
     background: #232526;
     border-radius: 30px;
-    transition: all .50s ease;
+   
 }
 
 .scroll-down i:hover {
@@ -202,10 +217,10 @@ section {
 }
 
 .heading-img {
-    width: 1200px;
+    width: 900px;
     height: auto;
-    margin-top: 200px;
-
+   
+    margin-left: 120px;
 }
 
 .heading-text1 {
@@ -216,7 +231,7 @@ section {
 .heading-text {
     position: absolute;
     bottom: 33%;
-    right: 27%;
+    right: 17%;
 }
 
 .heading-text2 {
@@ -248,7 +263,7 @@ section {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    margin-bottom: -100px;
+    
 }
 
 .button:hover {
@@ -259,7 +274,7 @@ section {
 }
 
 .card {
-    display: inline-block;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -271,14 +286,14 @@ section {
         rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     padding: 30px 0 40px;
     border-radius: 20px;
-    width: 500px;
+    width: 400px;
     color: green;
     margin-left: 20px;
 }
 
 .image {
     display: inline-block;
-    width: 275px;
+    width: 225px;
     height: 145px;
     margin-bottom: 50px;
     z-index: 1;
@@ -293,7 +308,9 @@ section {
 .image img {
     width: 200%;
     height: 150%;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .name {
@@ -378,13 +395,13 @@ a {
 .overtuig {
     display: flex;
     flex-direction: column-reverse;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     gap: 2rem;
 }
 
-.overtuig p{
+.overtuig p {
     padding: 20px;
     border: 2px solid white;
     background: #232526;
@@ -392,7 +409,7 @@ a {
     font-size: 18px;
 }
 
-.overtuig p img{
+.overtuig p img {
     width: 300px;
     height: auto;
     margin-left: auto;
@@ -402,8 +419,40 @@ a {
 }
 
 
-
-
+.section-a {
+    margin: 2rem 0;
+  }
+  
+  .section-a .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section-a h1 {
+    font-size: 4rem;
+    color: var(--primary-color);
+  }
+  
+  .section-a p {
+    margin: 1rem 0;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    background-color: red;
+  }  
+  .btn:hover {
+    background: yellow
+  }
 
 
 @media (max-width: 1535px) {
