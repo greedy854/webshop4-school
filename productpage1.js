@@ -1,5 +1,6 @@
-let allGames = document.getElementsByClassName("game");
+let allGames = document.getElementsByClassName("part");
 let filters = document.getElementsByClassName("filter");
+let section = document.getElementsByClassName("part--section");
 
 
 //hiermee start je altijd boven aan de pagina als je refresht
@@ -8,8 +9,8 @@ window.scrollTo(0,0);
 
 
 setInterval(function(){
-   document.getElementsByTagName("body")[0].style.overflow = "auto";
-   document.getElementsByTagName("main")[0].style.opacity = "1";
+   document.getElementsByTagName("main")[0].style.overflow = "auto";
+   document.getElementsByClassName("main")[0].style.opacity = "1";
 }, 1500)
 
 
@@ -22,105 +23,132 @@ for(let i = 0; i < filters.length; i++){
 //als er op de filter knop gedrukt word ^ gaat de adventure genre weg
 //
 
-//adventure filter
-let DutchFilter = document.getElementById("Dutch coins or banknotes");
+//PART 1
+let part1Filter = document.getElementById("part--1");
 
-DutchFilter.onchange = function(){
-    if(DutchFilter.checked === true){
+part1Filter.onchange = function(){
+    if(part1Filter.checked === true){
         for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "Dutch coins or banknotes"){
+            if(allGames[i].dataset.category === "part--1"){
                 allGames[i].style.display = "block";
+                section[i].style.display = "block";
             }
         }
     }
     else{
         for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "Dutch coins or banknotes"){
+            if(allGames[i].dataset.category === "part--1"){
                 allGames[i].style.display = "none";
+                section[i].style.display = "none";
             }
         }
     }
 }
 
-//sport filter
-let BanknotesFilter = document.getElementById("Banknotes");
+//PART 2
+let part2Filter = document.getElementById("part--2");
 
-BanknotesFilter.onchange = function(){
-    if(BanknotesFilter.checked === true){
+part2Filter.onchange = function(){
+    if(part2Filter.checked === true){
         for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "Banknotes"){
+            if(allGames[i].dataset.category === "part--2"){
                 allGames[i].style.display = "block";
+                section[i].style.display = "block";
             }
         }
     }
     else{
         for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "Banknotes"){
+            if(allGames[i].dataset.category === "part--2"){
                 allGames[i].style.display = "none";
+                section[i].style.display = "none";
             }
         }
     }
 }
 
-//puzzle filter
-let GoldFilter = document.getElementById("Gold");
+//PART 3
+let part3Filter = document.getElementById("part--3");
 
-GoldFilter.onchange = function(){
-    if(GoldFilter.checked === true){
+part3Filter.onchange = function(){
+    if(part3Filter.checked === true){
         for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "Gold"){
+            if(allGames[i].dataset.category === "part--3"){
                 allGames[i].style.display = "block";
+                section[i].style.display = "block";
             }
         }
     }
     else{
         for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "Gold"){
+            if(allGames[i].dataset.category === "part--3"){
                 allGames[i].style.display = "none";
+                section[i].style.display = "none";
             }
         }
     }
 }
 
 
-//shooter filter
-let SilverFilter = document.getElementById("Silver");
+//PART 4
+let part4Filter = document.getElementById("part--4");
 
-SilverFilter.onchange = function(){
-    if(SilverFilter.checked === true){
+part4Filter.onchange = function(){
+    if(part4Filter.checked === true){
         for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "Silver"){
+            if(allGames[i].dataset.category === "part--4"){
                 allGames[i].style.display = "block";
+                section[i].style.display = "block";
             }
         }
     }
     else{
         for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "Silver"){
+            if(allGames[i].dataset.category === "part--4"){
                 allGames[i].style.display = "none";
+                section[i].style.display = "none";
             }
         }
     }
 }
 
-//action filler
-let CopperFilter = document.getElementById("Copper");
 
-CopperFilter.onchange = function(){
-    if(CopperFilter.checked === true){
-        for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "Copper"){
-                allGames[i].style.display = "block";
-            }
-        }
-    }
-    else{
-        for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "Copper"){
-                allGames[i].style.display = "none";
-            }
-        }
-    }
-}
 
-s
+$("#click-slide").hover(function doALoadOfStuff() {
+
+    if ($(window).width() >= 768) {
+
+        if ($("#drop").hasClass('down')) {
+            $("#click-slide").addClass('norm').delay(400).animate({
+                paddingTop: "0",
+                height: "80"
+            }, 400);
+            $("#dropdown-menu-r").animate({
+                top: "-500"
+            }, 400).delay(200).animate({
+                opacity: "0"
+            }, 100);
+            setTimeout(function () {
+                $("#drop").removeClass('down-color').removeClass('down');
+            }, 500);
+            $("#drop").delay(400).animate({
+                top: "0"
+            }, 400);
+        } else {
+            $("#click-slide").removeClass('norm').animate({
+                paddingTop: "103",
+                height: "307",
+            }, 396);
+            $("#dropdown-menu-r").animate({
+                opacity: "1"
+            }, 100).delay(500).animate({
+                top: "-185"
+            }, 400);
+            $("#drop").addClass('down-color').animate({
+                top: "122"
+            }, 400).addClass('down');
+
+        }
+
+    }
+});

@@ -19,7 +19,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Jost:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-    <script src="https://kit.fontawesome.com/31ba87c7ce.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/31ba87c7ce.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,19 +29,33 @@
     <article class="logo">
       <img src="/img/logo7.png" alt="">
     </article>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <div class="wrapper">
+      <div class="label">Submit your search</div>
+      <div class="searchBar">
+        <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+        <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+          <svg style="width:40px;height:30px" viewBox="9 2 20 24">
+            <path fill="#39b54a"
+              d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
     <article class="cart">
       <a href="/productpage1.html"><i class="fa-solid fa-cart-shopping"></i></a>
     </article>
 
-    
-
-
-    
 
 
 
 
-    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <section class="bx bx-menu" id="menu-icon"></section>
   </header>
 
   <ul class="navlist">
@@ -49,40 +63,66 @@
     <li><a href="/html/main.html">Home</a></li>
     <li><a href="/about-us.html">About-us</a></li>
     <li><a href="#">Information</a></li>
-    <li><a href="/productpage1.html">Products page#1</a></li>
-    <li><a href="#">Products page#2</a></li>
-    <li><a href="#">Prices</a></li>
-    <li><a href="#">Deals</a></li>
+    <li><a href="/productpage1.html">Products page</a></li>
     <li><a href="/developer.html">Developers</a></li>
-    <li><a href="/contact.html">Contact</a></li>
+    <li><a href="/contact.html">contact</a></li>
+    <li><a href="/location.html">Location</a></li>
     <li><a href="/login.html">Log-in</a></li>
 
 
+
   </ul>
+
+  <nav>
+    <ul class="nav-menu">
+      <li class="norm li-1"><a href="/html/main.html">Home</a></li>
+      <li class="norm li-1"><a href="#">Prices</a></li>
+      <li class="norm li-1"><a href="#">Deals</a></li>
+      <li class="norm li-1"><a href="/about-us.html">Dutch</a></li>
+      <li class="norm li-1"><a href="/info.html">Gold</a></li>
+      <li class="norm li-1"><a href="/developer.html">Silver</a></li>
+      <li class="norm li-1"><a href="/contact.html">Banknotes</a></li>
+      <li class="norm li-1"><a href="/login.html">Coming soon!</a></li>
+      <li class="dropdown norm li-1" id="click-slide">
+        <a href="#" class="dropdown-toggle" id="drop" data-toggle="dropdown" onclick="toggleSlider();" role="button"
+          aria-expanded="false">Products &nbsp; &#9660;</a>
+
+        <ul class="dropdown-menu" id="dropdown-menu-r" role="menu">
+          <li><a href="/productpage1.html">All Products</a></li>
+          <li><a href="/dutch.html">Dutch</a></li>
+          <li><a href="/gold.html">Gold</a></li>
+          <li><a href="/silver.html">Silver</a></li>
+          <li><a href="/banknotes.html">Banknotes</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Import jQuery and jQuery UI -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+  </script>
+
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js">
+  </script>
 
   <section class="hero">
     <article class="hero-text">
       <h5>Welcome</h5>
       <h1>Greedy's Coins</h1>
       <h4>Greedy's coins: Discover the True Value of Collectible Coins!</h4>
-      <p></p>
       <a href="/about-us.html">Prices</a>
       <a href="/about-us.html" class="ctaa"> <i class="ri-play-fill"></i>Take a look at the coins</a>
     </article>
 
-    <div class="hero-img">
+    <section class="hero-img">
       <img src="/img/product1nl.png" alt="">
-    </div>
+    </section>
 
 
   </section>
 
-  <article class="icons">
-    <a href="#"><i class="ri-instagram-line"></i></a>
-    <a href="#"><i class="ri-twitter-line"></i></a>
-    <a href="#"><i class="ri-youtube-line"></i></a>
-    <a href="#"><i class="ri-facebook-box-line"></i></a>
-  </article>
+
 
   <article class="scroll-down">
     <a href="#"><i class="ri-arrow-up-line"></i></a>
@@ -94,276 +134,280 @@
         Munt 1 euro Nederland 2001 BEATRIX KONINGIN der NEDERLANDEN
       </p>
       <p class="heading-text2">
-        2 euro coin from the Netherlands,
+        1 euro coin from the Netherlands,
         year 2000. Beatrix Queen of the Netherlands,
         On the edge we see the marks of issue:
         God be with us.
+        Op deze nikkelen munten is een dubbelportret van de nieuwe vorstin en haar moeder afgebeeld. Beatrix staat op de
+        voorgrond,
+        daarachter Juliana. Beiden kijken naar links,
+        de kijkrichting van de nieuwe Koningin, als symbool voor de overgangsfase.
       </p>
       <a href="#">
-        <div class="wrap">
+        <section class="wrap">
           <a href="/dutch.html"><button class="button">Buy now!</button></a>
-        </div>
+        </section>
       </a>
 
     </article>
     <img class="heading-img" src="/img/product2nl.png" alt="">
   </article>
 
-  <article>
-    <section class="cards">
-      <div class="card1"></div>
-      <div class="card2"></div>
-      <div class="card3"></div>
-      <div class="card4"></div>
+  <ul class="parts">
+    <section class="part--section">
+      <li class="part" data-category="Banknotes"><img src="/img/silver1.png" alt="figuurtje van bucciarati"></li>
+      <h2>100 Gulden "Snip" 1977 ZFr+</h2>
+      <h1>€39,99</h1>
+      <a href="/silver.html">
+        <p class="part--p">op vooraad > </p>
+      </a>
+
     </section>
+
+    <section class="part--section">
+      <li class="part" data-category="Dutch"><img src="/img/product1nl.png" alt="figuurtje van de stand Crazy Diamond">
+      </li>
+      <h2>Munt 2 euro Nederland 2001 BEATRIX KONINGIN der NEDERLANDEN</h2>
+      <h1>€349,99</h1>
+      <a href="/dutch.html">
+        <p class="part--p">op vooraad > </p>
+      </a>
+    </section>
+
+    <section class="part--section">
+      <li class="part" data-category="Gold"><img src="/img/gold1.png" alt="figuurtje van DIO"></li>
+      <h2>2 Euro 2000, Juan Carlos I (2000-2009) - Spain - Coin - 7688</h2>
+      <h1>€224,99</h1>
+      <a href="/gold.html">
+        <p class="part--p">op vooraad > </p>
+      </a>
+    </section>
+
+    <section class="part--section">
+      <li class="part" data-category="Banknotes"><img src="/img/banknotes3.png" alt="figuurtje van Abbaccio"></li>
+      <h2>Banknote China 10 Yen - Dragon - ND (1939) - F to VF - P.M20</h2>
+      <h1>€100.000.000.000</h1>
+      <a href="/banknotes.html">
+        <p class="part--p">op vooraad > </p>
+      </a>
+
+    </section>
+
+    <section class="part--section">
+      <li class="part" data-category="Banknotes"><img src="/img/product3nl.png" alt="figuurtje
+        van Abbaccio"></li>
+      <h2>Munt 0,05 euro Nederland 1999 BEATRIX KONINGIN der NEDERLANDEN</h2>
+      <h1>Test</h1>
+      <a href="/dutch.html">
+        <p class="part--p">op vooraad > </p>
+      </a>
+
+    </section>
+
+    <section class="part--section">
+      <li class="part" data-category="Banknotes"><img src="/img/banknotes2.png" alt="figuurtje
+        van Abbaccio"></li>
+      <h2> Netherlands 1000 Gulden Banknote 1972, Aunc</h2>
+      <h1>Test</h1>
+      <a href="/banknotes.html">
+        <p class="part--p">op vooraad > </p>
+      </a>
+
+    </section>
+
+
+
+
+
+  </ul>
   </article>
-  <div class="container">
-    <div class="row">
-      <div class="card">
-        <div class="image">
-          <img src="/img/banknotes3.png" />
-        </div>
-        <div class="details">
-          <h2 class="name">Coin 1</h2>
-          <h3 class="title">Banknote China 10 Yen - Dragon - ND (1939) - F to VF - P.M20</h4>
-            <p>€11111111399,99</p>
-            <a href="/banknotes.html"><button class="btn-hover color-5">Buy now!</button></a>
-        </div>
 
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="card">
-        <div class="image">
-          <img src="/img/silver2.png" />
-        </div>
-        <div class="details">
-          <h2 class="name">Coin 1</h2>
-          <h3 class="title">Australia Silver Coin, 2017, Koala, Queen Elizabeth II</h4>
-            <p>€39,99</p>
-            <a href="/silver.html"><button class="btn-hover color-5">Buy now!</button></a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="card">
-        <div class="image">
-          <img src="/img/product3nl.png" />
-        </div>
-        <div class="details">
-          <h2 class="name">Coin 1</h2>
-          <h3 class="title">Munt 0,05 euro Nederland 1999 BEATRIX KONINGIN der NEDERLANDEN</h4>
-            <p>€114,99</p>
-            <a href="/dutch.html"><button class="btn-hover color-5">Buy now!</button></a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <article class="container">
-    <div class="row">
-      <div class="card">
-        <div class="image">
-          <img src="/img/silver3.png" />
-        </div>
-        <div class="details">
-          <h2 class="name">Coin 1</h2>
-          <h3 class="title">1 troy ounce silver coin Maple Leaf Canada</h4>
-            <p>€29,99</p>
-            <a href="/silver.html"><button class="btn-hover color-5">Buy now!</button></a>
-        </div>
-
-      </div>
-    </div>
-  </article>
   <article class="sec sec--3--steps">
     <h1>Why at our store ❔</h1>
     <section class="step step--1">
-        <figure>🚚📦</figure>
-        <h2>1. First day delivery!</h2>
+      <figure>🚚📦</figure>
+      <h2>1. First day delivery!</h2>
     </section>
 
     <section class="step step--2">
-        <figure>💫</figure>
-        <h2>2. High quality!</h2>
+      <figure>💫</figure>
+      <h2>2. High quality!</h2>
     </section>
 
     <section class="step step--3">
-        <figure>🤑</figure>
-        <h2>3. Always discounts!</h2>
+      <figure>🤑</figure>
+      <h2>3. Always discounts!</h2>
     </section>
 
     <section class="step step--4">
-        <figure>🔏</figure>
-        <h2>4. Pay safe!</h2>
+      <figure>🔏</figure>
+      <h2>4. Pay safe!</h2>
     </section>
-    </article>
+  </article>
   <section class="section-a">
     <div class="container">
       <div>
         <h1>Munt 2 euro nederland 2001 beatrix</h1>
         <p>
           The coin was minted in December last year,
-           the year in which Beatrix stepped down. This is a limited edition coin,
-            only 38 of them were struck at a special meeting.
-             In addition, the 2-euro coin does not have an edge lettering.
-              Normally the saying 'God be with us' is on the coin.
+          the year in which Beatrix stepped down. This is a limited edition coin,
+          only 38 of them were struck at a special meeting.
+          In addition, the 2-euro coin does not have an edge lettering.
+          Normally the saying 'God be with us' is on the coin.
         </p>
         <section class="about">
-        <a href=""><button type="button">Buy now!</button></a>
-      </section>
+          <a href=""><button type="button">Buy now!</button></a>
+        </section>
       </div>
       <img src="/img/product1nl.png" alt="" />
     </div>
   </section>
 
   <section class="section section--third">
-        <button class="arrow"></button>
-        <ul class="reviews">
-            <li class="review">
-                <figure class="quote">
-                    &#10077;
-                </figure>
-                <section class="stars">&#9733;
-                    &#9733;
-                    &#9733;
-                </section>
-                <img src="/img/review1.jpg" alt="">
-                <p>1. Greedy's is hands down the best store I've ever been to! The selection is amazing, and they always have the latest trends in stock. The staff is friendly and helpful, making shopping a breeze. I highly recommend Greedy's for all your fashion needs!.</p>
-            </li>
-            <li class="review">
-                <figure class="quote">
-                    &#10077;
-                </figure>
-                <section class="stars">
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                </section>
-                <img src="/img/review2.jpg" alt="">
-                <p>2. I had a fantastic experience shopping at Greedy's. The store is well-organized, and it's easy to find what you're looking for. The quality of their products is top-notch, and their prices are reasonable. Whether you're shopping for clothing, accessories, or home decor, Greedy's has it all!</p>
-            </li>
-            <li class="review">
-                <figure class="quote">
-                    &#10077;
-                </figure>
-                <section class="stars">&#9733;
-                        &#9733;
-                        &#9733;
-                </section>
-                <img src="/img/review3.jpg" alt="">
-                <p>3.Greedy's is a hidden gem! I stumbled upon this store while exploring the city, and I'm so glad I did. The store has a unique selection of items that you won't find anywhere else. It's a great place to find gifts for friends and family. I'll definitely be back!</p>
-            </li>
-            <li class="review">
-                <figure class="quote">
-                    &#10077;
-                </figure>
-                <section class="stars">&#9733;
-                    &#9733;
-                    &#9733;
-                </section>
-                <img src="/img/review4.png" alt="">
-                <p>4. I recently visited Greedy's for the first time, and I was blown away by the level of customer service. The staff went above and beyond to assist me in finding the perfect outfit for a special occasion. They were patient, attentive, and genuinely cared about my satisfaction. Greedy's has won me over as a loyal customer!</p>
-            </li>
-            <li class="review">
-                <figure class="quote">
-                    &#10077;
-                </figure>
-                <section class="stars">&#9733;
-                    &#9733;
-                    &#9733;
-                </section>
-                <img src="/img/review5.gif" alt="">
-                <p>5. Me as a lightskin Greedy's is a fashion lover's paradise! The store is beautifully designed, and it feels like stepping into a high-end boutique. The quality of their Coins and banknotes is exceptional, and the styles are always on-trend. If you want to elevate your collection, Greedy's is the place to go.</p>
-            </li>
-            <li class="review">
-                <figure class="quote">
-                    &#10077;
-                </figure>
-                <section class="stars">&#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
-                    &#9733;
+    <button class="arrow"></button>
+    <ul class="reviews">
+      <li class="review">
+        <figure class="quote">
+          &#10077;
+        </figure>
+        <section class="stars">&#9733;
+          &#9733;
+          &#9733;
+        </section>
+        <img src="/img/review1.jpg" alt="">
+        <p>1. Greedy's is hands down the best store I've ever been to! The selection is amazing, and they always have
+          the latest trends in stock. The staff is friendly and helpful, making shopping a breeze. I highly recommend
+          Greedy's for all your fashion needs!.</p>
+      </li>
+      <li class="review">
+        <figure class="quote">
+          &#10077;
+        </figure>
+        <section class="stars">
+          &#9733;
+          &#9733;
+          &#9733;
+          &#9733;
+        </section>
+        <img src="/img/review2.jpg" alt="">
+        <p>2. I had a fantastic experience shopping at Greedy's. The store is well-organized, and it's easy to find what
+          you're looking for. The quality of their products is top-notch, and their prices are reasonable. Whether
+          you're shopping for clothing, accessories, or home decor, Greedy's has it all!</p>
+      </li>
+      <li class="review">
+        <figure class="quote">
+          &#10077;
+        </figure>
+        <section class="stars">&#9733;
+          &#9733;
+          &#9733;
+        </section>
+        <img src="/img/review3.jpg" alt="">
+        <p>3.Greedy's is a hidden gem! I stumbled upon this store while exploring the city, and I'm so glad I did. The
+          store has a unique selection of items that you won't find anywhere else. It's a great place to find gifts for
+          friends and family. I'll definitely be back!</p>
+      </li>
+      <li class="review">
+        <figure class="quote">
+          &#10077;
+        </figure>
+        <section class="stars">&#9733;
+          &#9733;
+          &#9733;
+        </section>
+        <img src="/img/review4.png" alt="">
+        <p>4. I recently visited Greedy's for the first time, and I was blown away by the level of customer service. The
+          staff went above and beyond to assist me in finding the perfect outfit for a special occasion. They were
+          patient, attentive, and genuinely cared about my satisfaction. Greedy's has won me over as a loyal customer!
+        </p>
+      </li>
+      <li class="review">
+        <figure class="quote">
+          &#10077;
+        </figure>
+        <section class="stars">&#9733;
+          &#9733;
+          &#9733;
+        </section>
+        <img src="/img/review5.gif" alt="">
+        <p>5. Me as a lightskin Greedy's is a fashion lover's paradise! The store is beautifully designed, and it feels
+          like stepping into a high-end boutique. The quality of their Coins and banknotes is exceptional, and the
+          styles are always on-trend. If you want to elevate your collection, Greedy's is the place to go.</p>
+      </li>
+      <li class="review">
+        <figure class="quote">
+          &#10077;
+        </figure>
+        <section class="stars">&#9733;
+          &#9733;
+          &#9733;
+          &#9733;
+          &#9733;
+        </section>
+        <img src="/img/palah" alt="">
+        <p>6. Shopping at Greedy's is always a delight. The store has a trendy and modern atmosphere that makes browsing
+          a pleasure. Their sales and promotions are fantastic, offering great deals on high-quality items. I've been a
+          regular customer for years, and I can't recommend Greedy's enough for anyone who loves fashion and a great
+          shopping experience.</p>
+      </li>
+    </ul>
+    <button class="arrow">></button>
+  </section>
+  <section class="section section--first"></section>
+  <section class="section section--second"></section>
 
-                </section>
-                <img src="/img/palah" alt="">
-                <p>6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nulla totam saepe nobis
-                    harum sit itaque, natus possimus quod ea odio doloremque. Soluta incidunt ipsum odit placeat, quam
-                    ducimus officia.</p>
-            </li>
+  <footer>
+    <article class="row">
+      <section class="col">
+        <img src="/img/logo7.png" alt="" class="logo">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium dolorem repudiandae aspernatur ullam.
+          Eaque itaque sed quae, maiores laborum soluta suscipit enim, dolore sequi laboriosam sunt, accusamus hic iste
+          quas.</p>
+      </section>
+
+      <section class="col">
+        <h3 class="place">Place <div class="underline"><span></span></div>
+        </h3>
+        <p>Amsterdam</p>
+        <p>Media college</p>
+        <p>Amsterdam, 1111aa, Netherlands</p>
+        <p class="email-id">34904@ma-web.nl</p>
+        <h4>+31 06123456789</h4>
+      </section>
+      <section class="col">
+        <h3>Links <div class="underline"><span></span></div>
+        </h3>
+        <ul class="page-footer">
+          <li><a href="/html/main.html">Home</a></li>
+          <li><a href="/about-us.html">About-us</a></li>
+          <li><a href="#">Information</a></li>
+          <li><a href="/productpage1.html">Products page#1</a></li>
+          <li><a href="#">Products page#2</a></li>
+          <li><a href="#">Prices</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="/developer.html">Developers</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/login.html">Log-in</a></li>
         </ul>
-        <button class="arrow">></button>
-    </section>
-    <section class="section section--first"></section>
-    <section class="section section--second"></section>
-
-    <footer>
-      <article class="row">
-          <section class="col">
-              <img src="/img/logo7.png" alt="" class="logo">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium dolorem repudiandae aspernatur ullam. Eaque itaque sed quae, maiores laborum soluta suscipit enim, dolore sequi laboriosam sunt, accusamus hic iste quas.</p>
-          </section>
-
-          <section class="col">
-              <h3>Place  <div class="underline"><span></span></div></h3>
-              <p>Amsterdam</p>
-              <p>Media college</p>
-              <p>Amsterdam, 1111aa, Netherlands</p>
-              <p class="email-id">34904@ma-web.nl</p>
-              <h4>+31 06123456789</h4>
-          </section>
-          <section class="col">
-              <h3>Links <div class="underline"><span></span></div></h3>
-              <ul>
-                <li><a href="/html/main.html">Home</a></li>
-                <li><a href="/about-us.html">About-us</a></li>
-                <li><a href="#">Information</a></li>
-                <li><a href="/productpage1.html">Products page#1</a></li>
-                <li><a href="#">Products page#2</a></li>
-                <li><a href="#">Prices</a></li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="/developer.html">Developers</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-                <li><a href="/login.html">Log-in</a></li>
-              </ul>
-          </section>
-          <section class="col">
-              <h3>Contact <div class="underline"><span></span></div></h3>
-              <form>
-                  <i class="fa-solid fa-envelope"></i>
-                  <input type="email" placeholder="Enter your email id" required>
-                  <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-              </form>
-              <article class="social-icons">
-                  <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-                  <a href=""><i class="fa-brands fa-instagram"></i></a>
-                  <a href=""><i class="fa-brands fa-twitter"></i></a>
-                  <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-              </article>
-          </section>
-      </article >
-      <hr>
-      <p class="copyright">Greedy's ©2023 - All Rights Reserved </p>
+      </section>
+      <section class="col">
+        <h3>Contact <div class="underline"><span></span></div>
+        </h3>
+        <form>
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required>
+          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <article class="social-icons">
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </article>
+      </section>
+    </article>
+    <hr>
+    <p class="copyright">Greedy's ©2023 - All Rights Reserved </p>
   </footer>
 
   <!--scrollreveale effect-->

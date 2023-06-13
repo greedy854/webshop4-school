@@ -4,14 +4,10 @@
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
-    color: white;
+    color: #39b54a;
   }
   
   body{
-    background: url(./img/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
   }
   
   form{
