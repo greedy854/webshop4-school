@@ -522,6 +522,10 @@ p {
     text-transform: uppercase;
 }
 
+.part--section a{
+    text-decoration: none;
+}
+
 @keyframes away {
     from {
         transform: scaleX(1);
