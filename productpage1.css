@@ -385,8 +385,8 @@ main{
 .inputs{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 10rem;
+    justify-content: center;
+    gap: 20rem;
     width: 100%;
     margin-bottom: 4rem;
     flex-wrap: wrap;
@@ -395,7 +395,7 @@ main{
 .inputs > div{
     display: flex;
     align-items: center;
-    width: 40rem;
+    
 }
 
 .label:hover{
@@ -507,13 +507,19 @@ p {
 }
 
 .part--section h2 {
-    font-size:9px;
+    font-size:20px;
     color: #39b54a;
 }
 
 .part--section h1 {
     font-size: 18px;
-    color: #39b54a;
+    color: #707070;
+}
+
+.part--section p{
+    color:#707070;
+    font-size:10.9px;
+    text-transform: uppercase;
 }
 
 @keyframes away {
