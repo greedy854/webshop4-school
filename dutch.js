@@ -7,6 +7,7 @@ let modalIOpen = false;
 let champagne1 = 0; 
 let champagne2   = 0;
 let champagne3  = 0;
+let champagne4  = 0;
 
 
 for(let i = 0; i < addToCartButtons.length; i++){
@@ -22,6 +23,9 @@ for(let i = 0; i < addToCartButtons.length; i++){
                 break;
             case "champagne3":
                 champagne3 +=1;
+                break;
+            case "champagne4":
+                champagne4 +=1;
                 break;
         }
 
@@ -48,6 +52,7 @@ checkOutButton.onclick = function(){
         document.getElementById("js--amount-champagne1").innerHTML = champagne1 + "x";
         document.getElementById("js--amount-champagne2").innerHTML = champagne2 + "x";
         document.getElementById("js--amount-champagne3").innerHTML = champagne3 + "x";
+        document.getElementById("js--amount-champagne4").innerHTML = champagne4 + "x";
 
         return;
     }

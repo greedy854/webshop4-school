@@ -5,7 +5,7 @@
     
 }
 :root{
-    --game-background-color: #f6f6f6;
+    --game-background-color: #ECECEC;
     --gradient: linear-gradient(to right, #20002c, #cbb4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -26,7 +26,6 @@ body{
     font-size: 2rem;
     font-weight: 400;
     padding: 4rem;
-    background: var(--gradient);
 
 }
 
@@ -86,7 +85,7 @@ body{
     position: fixed;
     top: 4rem;
     right: 4rem;
-    background: black;
+    background: #ecc725;
     width: 8rem;
     height: 8rem;
     border: none;
@@ -108,7 +107,7 @@ body{
     top: 0;
     right: 0;
     border-radius: 50%;
-    background: var(--gradient);
+    background: #30dd8a;
     border: 0.2rem solid white;
     display: flex;
     justify-content: center;
@@ -140,7 +139,7 @@ main{
 
 
 .games__game--third{
-    grid-column: span 2;
+    
 }
 
 .game__figure{
@@ -186,7 +185,7 @@ main{
     font-size: 90%;
     font-family: 'lato',sans-serif;
     color: white;
-    background: black;
+    background: #39b54a;
     padding: 1rem 2rem;
 }
     
@@ -196,7 +195,7 @@ main{
     font-size: 90%;
     font-family: 'lato',sans-serif;
     color: white;
-    background: black;
+    background: #39b54a;
     padding: 1rem 2rem;
     cursor: pointer;
     margin-top: 8.5px;

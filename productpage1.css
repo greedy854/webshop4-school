@@ -402,6 +402,10 @@ main{
     cursor: pointer;
 }
 
+.label{
+    color: #39b54a;
+}
+
 .filter{
     width: 5rem;
     height: 5rem;

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--remixicons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31ba87c7ce.js" crossorigin="anonymous"></script>
+    <!---googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Jost:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31ba87c7ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/productpage3.css">
+</head>
+<body>
+    <header>
+
+        <article class="logo">
+          <img src="/img/logo7.png" alt="">
+        </article>
+    
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
+        <div class="wrapper">
+          <div class="label">Submit your search</div>
+          <div class="searchBar">
+            <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Hello men!!!!!!!!!!!!!!!!!!!"
+              value="" />
+            <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+              <svg style="width:40px;height:30px" viewBox="9 2 20 24">
+                <path fill="#39b54a"
+                  d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+    
+    
+        <article class="cart">
+          <a href="/dutch.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </article>
+    
+    
+    
+    
+    
+    
+        <section class="bx bx-menu" id="menu-icon"></section>
+      </header>
+    
+      <ul class="navlist">
+    
+        
+    <li><a href="/html/main.html">Home</a></li>
+    <li><a href="/about-us.html">About-us</a></li>
+    <li><a href="#">Information</a></li>
+    <li><a href="/productpage1.html">Products page#1</a></li>
+    <li><a href="/contact.html">Product page#2</a></li>
+    <li><a href="/developer.html">Developers</a></li>
+    <li><a href="/location.html">Location</a></li>
+    <li><a href="/login.html">Log-in</a></li>
+    
+    
+    
+      </ul>
+    
+      <nav>
+        <ul class="nav-menu">
+          <li class="norm li-1"><a href="/html/main.html">Home</a></li>
+          <li class="norm li-1"><a href="#">Prices</a></li>
+          <li class="norm li-1"><a href="#">Deals</a></li>
+          <li class="norm li-1"><a href="/about-us.html">Dutch</a></li>
+          <li class="norm li-1"><a href="/info.html">Gold</a></li>
+          <li class="norm li-1"><a href="/developer.html">Silver</a></li>
+          <li class="norm li-1"><a href="/contact.html">Banknotes</a></li>
+          <li class="norm li-1"><a href="/login.html">Coming soon!</a></li>
+          <li class="dropdown norm li-1" id="click-slide">
+            <a href="#" class="dropdown-toggle" id="drop" data-toggle="dropdown" onclick="toggleSlider();" role="button"
+              aria-expanded="false">Products &nbsp; &#9660;</a>
+    
+            <ul class="dropdown-menu" id="dropdown-menu-r" role="menu">
+              <li><a href="/productpage1.html">All Products</a></li>
+              <li><a href="/dutch.html">Dutch</a></li>
+              <li><a href="/gold.html">Gold</a></li>
+              <li><a href="/silver.html">Silver</a></li>
+              <li><a href="/banknotes.html">Banknotes</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    
+      <!-- Import jQuery and jQuery UI -->
+    
+     
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <div class="product">
+        <div class="product-img">
+          <figure><img src="/img/product2nl.png" alt=""></figure>
+        </div>
+        <div class="product-info">
+          <h2>Munt 1 euro Nederland 2001 BEATRIX</h2>
+          <p class="price">€299,99</p>
+          <hr />
+          <div class="size-options">
+            <p class="preview"><b>Type:</b></p>
+            <ul class="size-list">
+              <li>
+                <input type="radio" name="selectedSize" id="size-xxs" value="xxs">
+                <label for="size-xxs">New</label>
+              </li>
+              <li>
+                <input type="radio" name="selectedSize" id="size-xs" value="xs">
+                <label for="size-xs">Used</label>
+              </li>
+
+          </div>
+          <form class="add-to-cart-form">
+            <label class="quantity-label" for="quantity"><b>Quantity:</b></label>
+            <input type="number" id="quantity" value="1">
+            <button class="add-to-cart-btn" type="submit">Add to Cart</button>
+          </form>
+          <p>Free Shipping on Orders $150+</p>
+          <p>Please select a size to check store availability.</p>
+          <p>details:</p>
+          <p class="details">
+            De munt is geslagen in december vorig jaar, het jaar waarin Beatrix aftrad. Het gaat om een munt uit een beperkte oplage; er zijn er slechts 38 van geslagen tijdens een speciale bijeenkomst. Daarnaast is de 2-euromunt niet voorzien van een randschrift. Normaal gesproken staat de spreuk 'God zij met ons' op de munt.
+          </p>
+        </div>
+      </div>
+      <footer>
+        <article class="row">
+          <section class="col">
+            <img src="/img/logo7.png" alt="" class="logo">
+            <p>My name is greedy and we sell the best coins with quality in town if you want to know more about us then go to our information page you can find it on your right or on top of the website we hope to see you soon.</p>
+          </section>
+    
+          <section class="col">
+            <h3 class="place">Place <div class="underline"><span></span></div>
+            </h3>
+            <p>Amsterdam</p>
+            <p>Media college</p>
+            <p>Amsterdam, 1111aa, Netherlands</p>
+            <p class="email-id">34904@ma-web.nl</p>
+            <h4>+31 06123456789</h4>
+          </section>
+          <section class="col">
+            <h3>Links <div class="underline"><span></span></div>
+            </h3>
+            <ul class="page-footer">
+              <li><a href="/html/main.html">Home</a></li>
+              <li><a href="/about-us.html">About-us</a></li>
+              <li><a href="#">Information</a></li>
+              <li><a href="/productpage1.html">Products page</a></li>
+              <li><a href="/developer.html">Developers</a></li>
+              <li><a href="/contact.html">contact</a></li>
+              <li><a href="/location.html">Location</a></li>
+              <li><a href="/login.html">Log-in</a></li>
+            </ul>
+          </section>
+          <section class="col">
+            <h3>Contact <div class="underline"><span></span></div>
+            </h3>
+            <form>
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Enter your email id" required>
+              <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <article class="social-icons">
+              <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </article>
+          </section>
+        </article>
+        <hr>
+        <p class="copyright">Greedy's ©2023 - All Rights Reserved </p>
+      </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+      </script>
+    
+      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js">
+      </script>
+    <script src="/productpage3.js"defer></script>
+    
+</body>
+</html>

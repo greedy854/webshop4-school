@@ -36,3 +36,23 @@ $("#click-slide").hover(function doALoadOfStuff() {
 
     }
 });
+$('button').click( function(event) {
+    if ($(this).hasClass('submitted')){
+      event.preventDefault();
+      return;
+    }
+    $(this).addClass('submitted');
+    $(this).html('Added to cart!');
+    
+    setTimeout(goback, 3000);
+  });
+  
+  function goback() {
+    $('button').removeClass('submitted').html('Submit stuff');
+  }
+  $('button').mousedown(function(){
+    if ($(this).hasClass('submitted'))
+    $(this).addClass('error');
+  }).mouseup(function(){
+    $(this).removeClass('error');
+  });
