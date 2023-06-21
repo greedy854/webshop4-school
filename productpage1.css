@@ -876,8 +876,21 @@ button i {
     font-weight: 400;
     background: #39b54a;
     padding:10px;
+    border: none;
+  }
+
+  .price-title:hover{
+    cursor: pointer;
   }
   
+  .price-product{
+    color: #39b54a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   .price-container {
         display: flex;
       border: 1px solid #ccc;

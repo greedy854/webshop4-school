@@ -16,6 +16,8 @@
   <title>Document</title>
 </head>
 
+
+
 <body>
 
   <header>
@@ -130,16 +132,16 @@
 
     <div class="wrapper1">
       <fieldset class="filter-price">
-    
+
         <div class="price-field">
           <input type="range" min="10" max="2500" value="10" id="lower">
           <input type="range" min="10" max="2500" value="2500" id="upper">
         </div>
         <div class="price-wrap">
-          <span class="price-title">FILTER</span>
+          <button class="price-title" onclick="pricebuttonlist()">FILTER</button>
           <div class="price-container">
             <div class="price-wrap-1">
-    
+
               <label for="one">$</label>
               <input id="one">
             </div>
@@ -147,7 +149,7 @@
             <div class="price-wrap-2">
               <label for="two">$</label>
               <input id="two">
-    
+
             </div>
           </div>
         </div>
@@ -155,7 +157,6 @@
     </div>
 
     <ul class="parts">
-
 
       <section class="part--section">
         <li class="part" data-category="part--1"><img src="img/product1nl.png"
@@ -167,7 +168,8 @@
         <a href="productpage2.html">
           <h2>Details < </h2>
         </a>
-        <h2>test</h2>
+        <li value="399,99" class="price-product">€399,99</li>
+
         <section class="about">
           <a href="dutch.html"><button type="button">add to cart</button></a>
         </section>
@@ -183,7 +185,7 @@
         <a href="banknotes.html">
           <h2>Op vooraad > </h2>
         </a>
-        <h2>test</h2>
+        <li value="69,99" class="price-product">€69,99</li>
         <section class="about">
           <a href="banknotes.html"><button type="button">add to cart</button></a>
         </section>
@@ -193,9 +195,9 @@
         <li class="part" data-category="part--3"><img src="img/silver1.png" alt="figuurtje van DIO"></li>
         <p>2022 St. Helena 1 oz Silver Queens Coin</p>
         <a href="silver.html">
-          <h2>Op vooraad  </h2>
+          <h2>Op vooraad </h2>
         </a>
-        <h2>test</h2>
+        <li value="34,99" class="price-product">€34,99</li>
         <section class="about">
           <a href="silver.html"><button type="button">add to cart</button></a>
         </section>
@@ -212,7 +214,7 @@
         <a href="productpage3.html">
           <h2>Details < </h2>
         </a>
-        <h2>test</h2>
+        <li value="249,99" class="price-product">€249,99</li>
         <section class="about">
           <a href="dutch.html"><button type="button">add to cart</button></a>
         </section>
@@ -225,7 +227,7 @@
         <a href="gold.html">
           <h2>Op vooraad > </h2>
         </a>
-        <h2>test</h2>
+        <li value="224,99" class="price-product">€224,99</li>
         <section class="about">
           <a href="gold.html"><button type="button">add to cart</button></a>
         </section>
@@ -239,7 +241,7 @@
         <a href="banknotes.html">
           <h2>Op vooraad > </h2>
         </a>
-        <h2>test</h2>
+        <li value="174,99" class="price-product">€174,99</li>
         <section class="about">
           <a href="banknotes.html"><button type="button">add to cart</button></a>
         </section>
@@ -252,7 +254,7 @@
         <a href="dutch.html">
           <h2>Op vooraad > </h2>
         </a>
-        <h2>test</h2>
+        <li value="149,99" class="price-product">€149,99</li>
         <section class="about">
           <a href="dutch.html"><button type="button">add to cart</button></a>
         </section>
@@ -265,7 +267,7 @@
         <a href="gold.html">
           <h2>Op vooraad > </h2>
         </a>
-        <h2>test</h2>
+        <li value="99,99" class="price-product">€99,99</li>
         <section class="about">
           <a href="gold.html"><button type="button">add to cart</button></a>
         </section>
@@ -279,7 +281,7 @@
         <a href="silver.html">
           <h2>Op vooraad > </h2>
         </a>
-        <h2>test</h2>
+        <li value="34,99" class="price-product">€34,99</li>
         <section class="about">
           <a href="silver.html"><button type="button">add to cart</button></a>
         </section>
@@ -293,7 +295,7 @@
         <a href="banknotes.html">
           <h2>Op vooraad > </h2>
         </a>
-        <h2>test</h2>
+        <li value="2500" class="price-product">€2500</li>
         <section class="about">
           <a href="banknotes.html"><button type="button">add to cart</button></a>
         </section>
@@ -307,7 +309,7 @@
         <a href="gold.html">
           <h2>Op vooraad > </h2>
         </a>
-        <h2>test</h2>
+        <li value="239,99" class="price-product">€239,99</li>
         <section class="about">
           <a href="gold.html"><button type="button">add to cart</button></a>
         </section>
@@ -322,7 +324,7 @@
         <a href="silver.html">
           <h2>Op vooraad > </h2>
         </a>
-        <h2>test</h2>
+        <li value="44,99" class="price-product">€44,99</li>
         <section class="about">
           <a href="silver.html"><button type="button">add to cart</button></a>
         </section>
@@ -338,7 +340,8 @@
     <article class="row">
       <section class="col">
         <img src="/img/logo7.png" alt="" class="logo">
-        <p>My name is greedy and we sell the best coins with quality in town if you want to know more about us then go to our information page you can find it on your right or on top of the website we hope to see you soon.</p>
+        <p>My name is greedy and we sell the best coins with quality in town if you want to know more about us then go
+          to our information page you can find it on your right or on top of the website we hope to see you soon.</p>
       </section>
 
       <section class="col">

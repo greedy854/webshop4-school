@@ -4,18 +4,18 @@ let section = document.getElementsByClassName("part--section");
 
 
 //hiermee start je altijd boven aan de pagina als je refresht
-window.scrollTo(0,0);
+window.scrollTo(0, 0);
 
 
 
-setInterval(function(){
-   document.getElementsByTagName("main")[0].style.overflow = "auto";
-   document.getElementsByClassName("main")[0].style.opacity = "1";
+setInterval(function () {
+    document.getElementsByTagName("main")[0].style.overflow = "auto";
+    document.getElementsByClassName("main")[0].style.opacity = "1";
 }, 1500)
 
 
 //als er op de filter knop gedrukt word... zijn de lijnen code hieronder
-for(let i = 0; i < filters.length; i++){
+for (let i = 0; i < filters.length; i++) {
     filters[i].checked = true;
 }
 
@@ -26,18 +26,18 @@ for(let i = 0; i < filters.length; i++){
 //PART 1
 let part1Filter = document.getElementById("part--1");
 
-part1Filter.onchange = function(){
-    if(part1Filter.checked === true){
-        for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "part--1"){
+part1Filter.onchange = function () {
+    if (part1Filter.checked === true) {
+        for (let i = 0; i < allGames.length; i++) {
+            if (allGames[i].dataset.category === "part--1") {
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
             }
         }
     }
-    else{
-        for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "part--1"){
+    else {
+        for (let i = 0; i < allGames.length; i++) {
+            if (allGames[i].dataset.category === "part--1") {
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
             }
@@ -48,18 +48,18 @@ part1Filter.onchange = function(){
 //PART 2
 let part2Filter = document.getElementById("part--2");
 
-part2Filter.onchange = function(){
-    if(part2Filter.checked === true){
-        for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "part--2"){
+part2Filter.onchange = function () {
+    if (part2Filter.checked === true) {
+        for (let i = 0; i < allGames.length; i++) {
+            if (allGames[i].dataset.category === "part--2") {
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
             }
         }
     }
-    else{
-        for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "part--2"){
+    else {
+        for (let i = 0; i < allGames.length; i++) {
+            if (allGames[i].dataset.category === "part--2") {
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
             }
@@ -70,18 +70,18 @@ part2Filter.onchange = function(){
 //PART 3
 let part3Filter = document.getElementById("part--3");
 
-part3Filter.onchange = function(){
-    if(part3Filter.checked === true){
-        for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "part--3"){
+part3Filter.onchange = function () {
+    if (part3Filter.checked === true) {
+        for (let i = 0; i < allGames.length; i++) {
+            if (allGames[i].dataset.category === "part--3") {
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
             }
         }
     }
-    else{
-        for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "part--3"){
+    else {
+        for (let i = 0; i < allGames.length; i++) {
+            if (allGames[i].dataset.category === "part--3") {
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
             }
@@ -93,18 +93,18 @@ part3Filter.onchange = function(){
 //PART 4
 let part4Filter = document.getElementById("part--4");
 
-part4Filter.onchange = function(){
-    if(part4Filter.checked === true){
-        for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "part--4"){
+part4Filter.onchange = function () {
+    if (part4Filter.checked === true) {
+        for (let i = 0; i < allGames.length; i++) {
+            if (allGames[i].dataset.category === "part--4") {
                 allGames[i].style.display = "block";
                 section[i].style.display = "block";
             }
         }
     }
-    else{
-        for(let i = 0; i < allGames.length; i++){
-            if(allGames[i].dataset.category === "part--4"){
+    else {
+        for (let i = 0; i < allGames.length; i++) {
+            if (allGames[i].dataset.category === "part--4") {
                 allGames[i].style.display = "none";
                 section[i].style.display = "none";
             }
@@ -155,12 +155,12 @@ $("#click-slide").hover(function doALoadOfStuff() {
 
 
 var lowerSlider = document.querySelector('#lower');
-var  upperSlider = document.querySelector('#upper');
+var upperSlider = document.querySelector('#upper');
 
-document.querySelector('#two').value=upperSlider.value;
-document.querySelector('#one').value=lowerSlider.value;
+document.querySelector('#two').value = upperSlider.value;
+document.querySelector('#one').value = lowerSlider.value;
 
-var  lowerVal = parseInt(lowerSlider.value);
+var lowerVal = parseInt(lowerSlider.value);
 var upperVal = parseInt(upperSlider.value);
 
 upperSlider.oninput = function () {
@@ -170,10 +170,10 @@ upperSlider.oninput = function () {
     if (upperVal < lowerVal + 4) {
         lowerSlider.value = upperVal - 4;
         if (lowerVal == lowerSlider.min) {
-        upperSlider.value = 4;
+            upperSlider.value = 4;
         }
     }
-    document.querySelector('#two').value=this.value
+    document.querySelector('#two').value = this.value
 };
 
 lowerSlider.oninput = function () {
@@ -185,5 +185,27 @@ lowerSlider.oninput = function () {
             lowerSlider.value = parseInt(upperSlider.max) - 4;
         }
     }
-    document.querySelector('#one').value=this.value
-}; 
+    document.querySelector('#one').value = this.value
+};
+
+
+function pricebuttonlist() {
+    let pricelist = document.getElementsByClassName("price-product");
+    var lowerSlider = document.querySelector('#lower');
+    var upperSlider = document.querySelector('#upper');
+    lowerVal = parseInt(lowerSlider.value);
+    upperVal = parseInt(upperSlider.value);
+    for (let i = 0; i < pricelist.length; i++) {
+        if (pricelist[i].value >= lowerVal && pricelist[i].value <= upperVal) {
+            pricelist[i].style.display = "block";
+            section[i].style.display = "block";
+        }
+        else {
+
+            pricelist[i].style.display = "none";
+            section[i].style.display = "none";
+
+        }
+
+    }
+}
