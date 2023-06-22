@@ -1,0 +1,829 @@
+/* Basic Styling */
+html, body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Header */
+  
+  .cart {
+    position: fixed;
+    display: flex;
+    top: 3%;
+    right: 1.2%;
+}
+
+.cart::after {
+    position: fixed;
+    bottom: 6%;
+    right: 9%;
+    content: '';
+}
+
+.cart i {
+    display: block;
+    padding: 1.2rem;
+    font-size: 5.5rem;
+    color: #ffdf4f;
+    border-radius: 3rem;
+
+}
+
+.cart i:hover {
+    transform: translateY(-0.6rem);
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 31.25rem;
+    margin: 6rem auto;
+    margin-right: 70rem;
+
+}
+
+.label {
+    color: #39b54a;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: +0.13rem;
+    margin-bottom: 0.5rem;
+}
+
+.searchBar {
+    width: 120%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.searchBar:hover {}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #39b54a;
+    opacity: 1;
+    /* Firefox */
+    font-size: 1.35rem;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+
+#searchQueryInput {
+    width: 100%;
+    height: 4.8rem;
+    background: #707070;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1.4rem;
+    color: white;
+}
+
+
+#searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#searchQuerySubmit:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+    
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9.8rem;
+    background: transparent;
+    background: #555555;
+    position: relative;
+    
+}
+
+.navlist {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+    background: transparent;
+    background: #555555;
+    position: relative;
+    padding: 4rem;
+    text-decoration: none;
+    list-style: none;
+    margin-top: -0.1rem;
+}
+
+.navlist a {
+    color: white;
+    margin-left: 6rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    border-bottom: 0.2rem solid transparent;
+    transition: all .55s ease;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navlist a:hover {
+    border-bottom: 0.2rem solid #39b54a;
+    color: #ffdf4f;
+}
+
+.logo {
+    width: 250%;
+    height: 220%;
+    display: flex;
+    top: 0%;
+    right: 50%;
+    margin-top: 3.1rem;
+}
+
+
+nav {}
+
+/* Navbar Default State Bg Color */
+.nav-menu .norm a:before {
+    background-color: #ffdf4f;
+}
+
+/* Navbar Hover State Bg Color */
+.nav-menu .norm a:after {
+    background-color: #ecc725;
+}
+
+/* Dropdown Menu a (navbar) Bg Color */
+.nav-menu .dropdown a:before {
+    background-color: #ffdf4f !important;
+}
+
+/* Dropdown Menu a (navbar) Bg Color */
+.nav-menu .dropdown a:after {
+    background-color: white !important;
+    border-bottom: 0.2rem solid #B7521B;
+}
+
+/* Dropdown Menu Open a (navbar) Bg Color */
+.down-color {
+    background-color: white !important;
+    border-bottom: 0.2rem solid #ecc725;
+}
+
+/* Dropdown Menu Inner Items Default Bg Color */
+.dropdown-menu>li>a {
+    background-color: #ecc725 !important;
+}
+
+/* Dropdown Menu Inner Items Hover/Focus Bg Color */
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    background-color: #ffdf4f !important;
+}
+
+/* - - - - End Color Theme - - - - */
+
+
+
+
+/* + + + + Navbar Body + + + + */
+
+nav {
+    position: absolute;
+    height: 8.2rem;
+    width: 100vw;
+}
+
+.nav-menu {
+    display: flex;
+    padding: 0;
+    margin-top: -1rem;
+}
+
+
+/* - - - - End Navbar Body - - - - */
+
+
+/* + + + + Nav Buttons + + + + */
+
+.nav-menu li {
+    display: block;
+    flex-grow: 1;
+    text-align: center;
+    z-index: 100;
+    background-color: transparent;
+    line-height: 6.1rem;
+    overflow: hidden;
+}
+
+
+
+.nav-menu li a {
+    position: relative;
+    display: inline-block;
+    z-index: 50;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+
+/* + + Style for Top-Level li's Only + + */
+
+.nav-menu .li-1 {
+    width: 100%;
+}
+
+
+/*  + + + + Nav Button Pseudos (For Hover State) + + + + */
+
+.nav-menu .norm a:after,
+.nav-menu .norm a:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 6rem;
+}
+
+.nav-menu .norm a:after {
+    left: 50%;
+    width: 0%;
+    z-index: -20;
+    -webkit-transition: .6s ease all .2s;
+    transition: .6s ease all .2s;
+}
+
+.nav-menu .norm a:hover:after {
+    left: 0%;
+    width: 100%;
+    -webkit-transition: .2s ease-out all;
+    transition: .2s ease-out all;
+}
+
+.nav-menu .norm a:before {
+    left: 0%;
+    width: 100%;
+    z-index: -50;
+}
+
+/* - - - - End Nav Button Pseudos - - - - */
+
+
+
+/*  + + + + Dropdown Styles + + + + */
+
+.dropdown {}
+
+.dropdown-menu {
+    width: 100%;
+    position: relative;
+    top: -50rem;
+    text-align: center;
+    z-index: 1049;
+    display: block;
+    list-style: none;
+    font-size: 1.2rem;
+    border: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding: 0;
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding-top: 0.56rem;
+    padding-bottom: 0.56rem;
+    clear: both;
+    font-family: gotham light !important;
+    font-size: 1.5rem !important;
+    line-height: 3.5rem;
+    color: #777 !important;
+    white-space: nowrap;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    text-decoration: none;
+    color: black !important;
+}
+
+.dropdown-menu>li>a:after,
+.dropdown-menu>li>a:before {
+    display: none !important;
+}
+
+
+/* + + jQuery Modified Dropdown Styles + + */
+
+#click-slide {
+    z-index: 3;
+    padding-bottom: 0 !important;
+}
+
+#drop {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.85rem;
+}
+
+.down {
+    position: absolute;
+    display: block;
+    top: 0rem;
+}
+
+
+#menu-icon {
+    color: black;
+    font-size: 3.5rem;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+  
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: flex;
+  }
+  
+  /* Columns */
+  .left-column {
+    width: 65%;
+    position: relative;
+  }
+  
+  .right-column {
+    width: 35%;
+    margin-top: 3.6rem;
+  }
+  
+  
+  /* Left Column */
+  .left-column img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    margin-top: 8rem;
+  }
+  
+  .left-column img.active {
+    opacity: 1;
+  }
+  
+  
+  /* Right Column */
+  
+  /* Product Description */
+  .product-description {
+    border-bottom: 0.1rem solid #E1E8EE;
+    margin-top: 15rem;
+  }
+  .product-description span {
+    font-size: 3.8rem;
+    color: #39b54a;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .product-description h1 {
+    font-weight: 300;
+    font-size: 4.1rem;
+    color: #43484D;
+    letter-spacing: -0.2rem;
+  }
+  .product-description p {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #ecc725;
+    
+  }
+  
+  /* Product Configuration */
+  .product-color span,
+  .cable-config span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #86939E;
+    margin-bottom: 1.8rem;
+    display: inline-block;
+  }
+  
+  /* Product Color */
+  .product-color {
+    margin-bottom: 2.7rem;
+  }
+  
+  .color-choose div {
+    display: inline-block;
+  }
+  
+  .color-choose input[type="radio"] {
+    display: none;
+  }
+  
+  .color-choose input[type="radio"] + label span {
+    display: inline-block;
+    width: 2.7rem;
+    height: 2.7rem;
+    margin: -0.1rem 0.4rem 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .color-choose input[type="radio"] + label span {
+    border: 0.2rem solid #FFFFFF;
+    box-shadow: 0 0.1rem 0.3rem 0 rgba(0,0,0,0.33);
+  }
+  
+  .color-choose input[type="radio"]#jett + label span {
+    background-color: #ecc725;
+  }
+  .color-choose input[type="radio"]#blue + label span {
+    background-color: #ffdf4f;
+  }
+  .color-choose input[type="radio"]#black + label span {
+    background-color: #39b54a;
+  }
+  
+  .color-choose input[type="radio"]:checked + label span {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  /* Product Price */
+  .product-price {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-price span {
+    font-size: 2.6rem;
+    font-weight: 300;
+    color: #43474D;
+    margin-right: 1.8rem;
+  }
+  
+  .cart-btn {
+    display: inline-block;
+    background-color: #fd58f7;
+    border-radius: 0.6rem;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    transition: all 0.5s;
+  }
+  .cart-btn:hover {
+    background-color: #fd58f7;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color: #f80000;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 20rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-logo {
+    width: 6rem;
+    height: 6rem;
+  }
+  
+  .footer-text {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+  
+  .footer-links {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #2a0303;
+  }
+  
+  .footer-copyright {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 47rem) {
+    .container {
+      flex-direction: column;
+      margin-top: 3.6rem;
+    }
+  
+    .left-column,
+    .right-column {
+      width: 100%;
+    }
+  
+    .left-column img {
+      width: 18rem;
+      right: 0;
+      top: -5.6rem;
+      left: initial;
+    }
+  }
+  
+  
+  
+  @media (max-width: 33.5rem) {
+    .left-column img {
+      width: 13.2rem;
+      top: -6.8rem;
+    }
+  }
+
+  footer {
+    max-height: 61rem;
+    width: 100%;
+    position: absolute;
+    /* bottom: 0;weghalen als niet werkt*/
+    background: #313139;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    padding: 10rem 0 3rem;
+    border-top-left-radius: 12.5rem;
+    font-size: 1.3rem;
+    height: 85vh;
+    line-height: 2rem;
+}
+
+footer p,h1,h4, .email-id{
+    color: #999999;
+}
+
+.page-footer{
+    margin-left: -21rem;
+}
+
+.phone{
+    margin-left: -11rem;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 1rem;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.logo {
+    width: 25rem;
+    margin-bottom: 3rem;
+    margin-left: -5.3rem;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.place {
+    width: fit-content;
+    margin-bottom: 4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.col p {
+    margin-right: 12rem;
+}
+
+
+
+.email-id {
+    width: fit-content;
+    border-bottom: 0.1rem solid #ccc;
+    margin: 2rem 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 1.2rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #999999;
+}
+
+
+form {
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid #ccc;
+    margin-bottom: 5rem;
+    gap: 1rem;
+}
+
+form .fas {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+}
+
+form button .fas {
+    font-size: 1.6rem;
+    color: #ccc;
+}
+
+.social-icons .fab {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: #000;
+    background: #fff;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.social-icons:hover {
+    cursor: pointer;
+}
+
+.social-icons a {
+    color: white;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-bottom: 0.1rem solid #ccc;
+    margin: 2rem auto;
+}
+
+.copyright {
+    text-align: center;
+    background: #26262e;
+    min-height: 13.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -9rem;
+    margin-top: -2rem;
+
+}
+
+.underline {
+    width: 100%;
+    height: 0.5rem;
+    background: #39b54a;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    overflow: hidden;
+}
+
+footer a:hover {
+    border-bottom: 0.2rem solid #39b54a;
+}
+
+.underline span {
+    width: 1.5rem;
+    height: 100%;
+    background: #ffdf4f;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    animation: moving 2s linear infinite;
+}
+
+
+@keyframes moving {
+    0% {
+        left: -2rem
+    }
+
+    100% {
+        left: 100%;
+    }
+
+}
+
+button i {
+    color: #ccc;
+}
+
+@media (max-width:70rem) {
+    footer {
+        bottom: unset;
+    }
+
+    .col {
+        flex-basis: 100%;
+
+    }
+
+    .col:nth-child(2),
+    .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+}
