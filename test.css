@@ -378,7 +378,7 @@ nav {
   
   
   .container {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     padding: 1.5rem;
     display: flex;

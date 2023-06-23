@@ -22,9 +22,9 @@ body {
 
 .cart {
     color: white;
-    width: 80px;
-    margin-top: 10px;
-    font-size: 40px;
+    width: 8rem;
+    margin-top: 1rem;
+    font-size: 4rem;
 }
 
 .cart a {
@@ -61,7 +61,7 @@ body::after {
     width: 100%;
     max-width: 31.25rem;
     margin: 6rem auto;
-    margin-right: 700px;
+    margin-right: 70rem;
     
   }
   
@@ -70,7 +70,7 @@ body::after {
     font-size: 1.1rem;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: +1.3px;
+    letter-spacing: +0.13rem;
     margin-bottom: 0.5rem;
   }
   
@@ -89,7 +89,7 @@ body::after {
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
     opacity: 1; /* Firefox */
-    font-size: 13.5px;
+    font-size: 1.35rem;
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -151,16 +151,16 @@ header {
 
 .navlist a {
     color: white;
-    margin-left: 60px;
-    font-size: 19px;
+    margin-left: 6rem;
+    font-size: 1.9rem;
     font-weight: 600;
-    border-bottom: 2px solid transparent;
+    border-bottom: 0.2rem solid transparent;
     transition: all .55s ease;
 
 }
 
 .navlist a:hover {
-    border-bottom: 2px solid #39b54a;
+    border-bottom: 0.2rem solid #39b54a;
     color: #ffdf4f;
 }
 
@@ -170,7 +170,7 @@ header {
     display: flex;
     top: 0%;
     right: 50%;
-    margin-top: 31px;
+    margin-top: 3.1rem;
 }
 
 
@@ -193,12 +193,12 @@ nav {
     /* Dropdown Menu a (navbar) Bg Color */
     .nav-menu .dropdown a:after {
      background-color:white !important;
-     border-bottom: 2px solid #B7521B;}
+     border-bottom: 0.2rem solid #B7521B;}
 
     /* Dropdown Menu Open a (navbar) Bg Color */
     .down-color {
      background-color: white !important;
-     border-bottom: 2px solid #ecc725;}
+     border-bottom: 0.2rem solid #ecc725;}
 
     /* Dropdown Menu Inner Items Default Bg Color */
     .dropdown-menu > li > a {
@@ -218,13 +218,13 @@ nav {
 
 nav {
  position: absolute;
-max-height: 300px;
+max-height: 30rem;
  width: 100vw;
 }
 
 .nav-menu {
  display: flex;
- margin-top: -2px;
+ margin-top: -0.2rem;
  padding: 0;
 }
 
@@ -240,7 +240,7 @@ max-height: 300px;
  text-align: center;
  z-index: 100;
  background-color: transparent;
- line-height: 61px;
+ line-height: 6.1rem;
  overflow: hidden;
 }
 
@@ -254,7 +254,7 @@ max-height: 300px;
  color: black;
  text-decoration: none;
  text-transform: uppercase;
- font-size: 15px;
+ font-size: 1.5rem;
 }
 
 
@@ -272,7 +272,7 @@ max-height: 300px;
  content: "";
  position: absolute;
  display: inline-block;
- height: 60px;
+ height: 6rem;
 }
 
 .nav-menu .norm a:after {
@@ -309,12 +309,12 @@ max-height: 300px;
 .dropdown-menu {
  width: 100%;
  position: relative;
- top: -500px;
+ top: -50rem;
  text-align: center;
  z-index: 1049;
  display: block;
  list-style: none;
- font-size: 12px;
+ font-size: 1.2rem;
  border: none;
  -webkit-background-clip: padding-box;
  background-clip: padding-box;
@@ -323,12 +323,12 @@ max-height: 300px;
 
 .dropdown-menu > li > a {
  display: block;
- padding-top: 5.6px;
- padding-bottom: 5.6px;
+ padding-top: 0.56rem;
+ padding-bottom: 0.56rem;
  clear: both;
  font-family: gotham light !important;
- font-size: 15px !important;
- line-height: 35px;
+ font-size: 1.5rem !important;
+ line-height: 3.5rem;
  color: #777 !important;
  white-space: nowrap;
 }
@@ -355,18 +355,18 @@ max-height: 300px;
 #drop {
  width: 100%;
  text-align: center;
- margin-bottom: 18.5px;
+ margin-bottom: 1.85rem;
 }
 
 .down {
  position: absolute;
  display: block;
- top: 0px;
+ top: 0rem;
 }
 
 #menu-icon {
     color: black;
-    font-size: 35px;
+    font-size: 3.5rem;
     z-index: 10001;
     cursor: pointer;
     display: none;
@@ -378,7 +378,7 @@ main{
     animation-name: popup;
     animation-duration: 0.8s;
     animation-delay: 1s;
-    margin-top: 100px;
+    margin-top: 10rem;
 
 }
 
@@ -476,8 +476,8 @@ main{
 .part--section {
     border: #9e9a9a 0.25rem solid;
     background: white;
-    margin: 40px;
-    max-height: 700px;
+    margin: 4rem;
+    max-height: 70rem;
     max-width: 100%;
 }
 
@@ -511,18 +511,18 @@ p {
 }
 
 .part--section h2 {
-    font-size:20px;
+    font-size:2rem;
     color: #39b54a;
 }
 
 .part--section h1 {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #707070;
 }
 
 .part--section p{
     color:#707070;
-    font-size:10.9px;
+    font-size:1.09rem;
     text-transform: uppercase;
 }
 
@@ -560,21 +560,21 @@ p {
 .about button {
     background: #ffdf4f;
     color: black;
-    border: 2px solid transparent;
+    border: 0.2rem solid transparent;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 1rem 3rem;
 
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: bold;
-    width: 140px;
-    height: 45px;
+    width: 14rem;
+    height: 4.5rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 11px;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
+    letter-spacing: 0.25rem;
     font-weight: 500;
 
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
 
 }
@@ -590,27 +590,27 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .about1 button {
     background: #ffdf4f;
     color: black;
-    border: 2px solid transparent;
+    border: 0.2rem solid transparent;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 1rem 3rem;
     
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: bold;
-    width: 140px;
-    height: 45px;
+    width: 14rem;
+    height: 4.5rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 11px;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
+    letter-spacing: 0.25rem;
     font-weight: 500;
    
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
 
 }
@@ -623,18 +623,18 @@ p {
 }
 
 footer {
-    max-height: 600px;
+    max-height: 60rem;
     width: 100%;
     position: absolute;
     /* bottom: 0;weghalen als niet werkt*/
     background: #313139;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
-    padding: 100px 0 30px;
-    border-top-left-radius: 125px;
-    font-size: 13px;
+    padding: 10rem 0 3rem;
+    border-top-left-radius: 12.5rem;
+    font-size: 1.3rem;
     height: 100vh;
-    line-height: 20px;
+    line-height: 2rem;
 }
 
 .row {
@@ -648,7 +648,7 @@ footer {
 
 .col {
     flex-basis: 25%;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .col:nth-child(2),
@@ -657,14 +657,14 @@ footer {
 }
 
 .logo {
-    width: 250px;
-    margin-bottom: 30px;
-    margin-left: -53px;
+    width: 25rem;
+    margin-bottom: 3rem;
+    margin-left: -5.3rem;
 }
 
 .col h3 {
     width: fit-content;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -674,30 +674,30 @@ footer {
 
 .place {
     width: fit-content;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 .col p{
-    margin-right: 120px;
+    margin-right: 12rem;
 }
     
 
 
 .email-id {
     width: fit-content;
-    border-bottom: 1px solid #ccc;
-    margin: 20px 0;
+    border-bottom: 0.1rem solid #ccc;
+    margin: 2rem 0;
 }
 
 ul li {
     list-style: none;
-    margin-bottom: 12px;
+    margin-bottom: 1.2rem;
 }
 
 ul li a {
@@ -707,18 +707,18 @@ ul li a {
 
 
 form {
-    padding-bottom: 15px;
+    padding-bottom: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 50px;
+    border-bottom: 0.1rem solid #ccc;
+    margin-bottom: 5rem;
     gap: 1rem;
 }
 
 form .fas {
-    font-size: 18px;
-    margin-right: 10px;
+    font-size: 1.8rem;
+    margin-right: 1rem;
 }
 
 form input {
@@ -738,20 +738,20 @@ form button {
 }
 
 form button .fas {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #ccc;
 }
 
 .social-icons .fab {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     text-align: center;
-    line-height: 40px;
-    font-size: 20px;
+    line-height: 4rem;
+    font-size: 2rem;
     color: #000;
     background: #fff;
-    margin-right: 15px;
+    margin-right: 1.5rem;
     cursor: pointer;
 }
 
@@ -766,52 +766,52 @@ form button .fas {
 hr {
     width: 100%;
     border: 0;
-    border-bottom: 1px solid #ccc;
-    margin: 20px auto;
+    border-bottom: 0.1rem solid #ccc;
+    margin: 2rem auto;
 }
 
 .copyright {
     text-align: center;
     background: #26262e;
-    min-height: 160px;
+    min-height: 16rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: -90px;
-    margin-top: -20px;
+    margin-bottom: -9rem;
+    margin-top: -2rem;
     
 }
 
 .underline {
     width: 100%;
-    height: 5px;
+    height: 0.5rem;
     background: #39b54a;
-    border-radius: 3px;
+    border-radius: 0.3rem;
     position: absolute;
-    top: 25px;
+    top: 2.5rem;
     left: 0;
     overflow: hidden;
 }
 
 footer a:hover {
-    border-bottom: 2px solid #39b54a;
+    border-bottom: 0.2rem solid #39b54a;
 }
 
 .underline span {
-    width: 15px;
+    width: 1.5rem;
     height: 100%;
     background: #ffdf4f;
-    border-radius: 3px;
+    border-radius: 0.3rem;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 1rem;
     animation: moving 2s linear infinite;
 }
 
 
 @keyframes moving {
     0% {
-        left: -20px
+        left: -2rem
     }
 
     100% {
@@ -824,7 +824,7 @@ button i {
     color: #ccc;
 }
 
-@media (max-width:700px) {
+@media (max-width:70rem) {
     footer {
         bottom: unset;
     }
@@ -841,7 +841,7 @@ button i {
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 1.5rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -862,7 +862,7 @@ button i {
   }
   
   .filter-price {
-    width: 220px;
+    width: 22rem;
     border: 0;
     padding: 0;
     margin: 0; 
@@ -871,11 +871,11 @@ button i {
   .price-title {
     position: relative;
     color: #fff;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.2em;
     font-weight: 400;
     background: #39b54a;
-    padding:10px;
+    padding:1rem;
     border: none;
   }
 
@@ -893,19 +893,19 @@ button i {
 
   .price-container {
         display: flex;
-      border: 1px solid #ccc;
-      padding: 5px;
-      margin-left: 57px;
-    width:112px;
+      border: 0.1rem solid #ccc;
+      padding: 0.5rem;
+      margin-left: 5.7rem;
+    width:11.2rem;
   }
   
   .price-field {
     position: relative;
     width: 100%;
-    height: 36px;
+    height: 3.6rem;
     box-sizing: border-box;
-    padding-top: 15px;
-    padding-left: 0px;
+    padding-top: 1.5rem;
+    padding-left: 0rem;
   }
   
   .price-field input[type=range] {
@@ -916,11 +916,11 @@ button i {
   
   .price-field input[type=range] {
     width: 100%;
-      height: 7px;
-  border: 1px solid #000;
+      height: 0.7rem;
+  border: 0.1rem solid #000;
       outline: 0;
       box-sizing: border-box;
-      border-radius: 5px;
+      border-radius: 0.5rem;
       pointer-events: none;
       -webkit-appearance: none;
   }
@@ -935,17 +935,17 @@ button i {
   }
   
   .price-field input[type=range]::-ms-track {
-    width: 188px;
-    height: 2px; 
+    width: 18.8rem;
+    height: 0.2rem; 
     border: 0;
     outline: 0;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     pointer-events: none;
     background: transparent;
     border-color: transparent;
     color: red;
-    border-radius: 5px;
+    border-radius: 0.5rem;
   }
   
   /* Style toddler input range */
@@ -958,9 +958,9 @@ button i {
       border: 0;
       outline: 0;
       border-radius: 50%;
-      height: 10px;
-      width: 10px;
-      margin-top: -4px;
+      height: 1rem;
+      width: 1rem;
+      margin-top: -0.4rem;
       background-color: #fff;
       cursor: pointer;
       cursor: pointer;
@@ -976,9 +976,9 @@ button i {
     border: 0;
     outline: 0;
     border-radius: 50%;
-    height: 10px;
-    width: 10px;
-    margin-top: -5px;
+    height: 1rem;
+    width: 1rem;
+    margin-top: -0.5rem;
     background-color: #fff;
     cursor: pointer;
     cursor: pointer;
@@ -994,9 +994,9 @@ button i {
     border: 0;
     outline: 0;
     border-radius: 50%;
-    height: 10px;
-    width: 10px;
-    margin-top: -5px;
+    height: 1rem;
+    width: 1rem;
+    margin-top: -0.5rem;
     background-color: #ecc725;
     cursor: pointer;
     cursor: pointer;
@@ -1008,29 +1008,29 @@ button i {
   
   .price-field input[type=range]::-webkit-slider-runnable-track { 
     /* WebKit/Blink */
-    width: 188px;
-    height: 2px;
+    width: 18.8rem;
+    height: 0.2rem;
     cursor: pointer;
     background: #555;
-    border-radius: 5px;
+    border-radius: 0.5rem;
   }
   
   .price-field input[type=range]::-moz-range-track { 
     /* Firefox */
-    width: 188px;
-    height: 2px;
+    width: 18.8rem;
+    height: 0.2rem;
     cursor: pointer;
     background: #242424;
-    border-radius: 5px;
+    border-radius: 0.5rem;
   }
   
   .price-field input[type=range]::-ms-track { 
     /* IE */
-    width: 188px;
-    height: 2px;
+    width: 18.8rem;
+    height: 0.2rem;
     cursor: pointer;
     background: #242424;
-    border-radius: 5px;
+    border-radius: 0.5rem;
   }
   
   /* Style for input value block */
@@ -1038,10 +1038,10 @@ button i {
   .price-wrap {
     display: flex;
     color: #39b54a;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.2em;
     font-weight: 400;
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
   }
 
   .price-wrap:hover{
@@ -1051,48 +1051,48 @@ button i {
   .price-wrap-1, 
   .price-wrap-2 {
     display: flex;
-    margin-left: 0px;
+    margin-left: 0rem;
   }
   
   .price-title {
-    margin-right: 5px;
+    margin-right: 0.5rem;
   }
   
   .price-wrap_line {
-      margin: 6px 0px 5px 5px;
+      margin: 0.6rem 0.5rem 0.5rem 0.5rem;
   }
   
   .price-wrap #one, 
   .price-wrap #two {
-    width: 30px;
+    width: 3rem;
     text-align: right;
     margin: 0;
     padding: 0;
-    margin-right: 2px;
+    margin-right: 0.2rem;
     background:  0;
     border: 0;
     outline: 0;
     color: #ecc725;
     font-family: 'Karla', 'Arial', sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.2em;
     font-weight: 400;
   }
   
   .price-wrap label {
       text-align: right;
-      margin-top: 6px;
-      padding-left: 5px;
+      margin-top: 0.6rem;
+      padding-left: 0.5rem;
   }
   
   /* Style for active state input */
       
   .price-field input[type=range]:hover::-webkit-slider-thumb {
-    box-shadow: 0 0 0 0.5px #242424;
+    box-shadow: 0 0 0 0.05rem #242424;
     transition-duration: 0.3s;
   }
   
   .price-field input[type=range]:active::-webkit-slider-thumb {
-    box-shadow: 0 0 0 0.5px #242424;
+    box-shadow: 0 0 0 0.05rem #242424;
     transition-duration: 0.3s;
   }
