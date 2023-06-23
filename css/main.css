@@ -832,6 +832,7 @@ a {
 .section-a h1 {
     font-size: 4rem;
     color: var(--primary-color);
+    margin-left: 6rem;
 }
 
 .section-a p {
@@ -861,7 +862,7 @@ a {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    margin-right: 10rem;
+    margin-left: 5rem;
 }
 
 .about button:hover {
@@ -965,7 +966,6 @@ a {
 }
 
 .review p {
-    font-size: 75%;
     font-style: italic;
     padding-bottom: 2rem;
     border-bottom: 0.5 rem solid rgba(0, 0, 0, 0.2);
@@ -1212,7 +1212,6 @@ button i {
     .about {
         width: 100%;
         height: auto;
-        padding: 7rem 0;
     }
 }
 

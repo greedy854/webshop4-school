@@ -128,7 +128,7 @@ main{
 }
 
 .games__h3{
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .games__game{
@@ -169,7 +169,7 @@ main{
     flex-wrap: wrap;
     gap: 0.8rem;
     margin: 0 0 1rem;
-    font-size: 14px;
+    font-size: 1.4rem;
     list-style-type: none;
   }
   
@@ -193,7 +193,7 @@ main{
   }
   
   .size-list li:has(:checked) {
-    outline: 1px solid;
+    outline: 0.1rem solid;
   }
 
   
@@ -232,7 +232,7 @@ main{
     background: #39b54a;
     padding: 1rem 2rem;
     cursor: pointer;
-    margin-top: 8.5px;
+    margin-top: 0.85rem;
 }
 
 .a-popup{
@@ -304,4 +304,28 @@ main{
         transform: translateY(0); 
     }
     
+}
+
+.total--price,.total--price1,.total--price2,.total--price3,.total--price4{
+    color: #555555;
+}
+
+.total--price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+p{
+    color: #555555;
+}
+.change--product{
+    color: #39b54a;
+    margin-left: 8rem;
+}
+ a{
+    text-decoration: none;
+}
+
+.change--product:hover{
+    cursor: pointer;
 }
