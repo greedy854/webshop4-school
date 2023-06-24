@@ -1,14 +1,15 @@
 /* Basic Styling */
-html, body {
+html,
+body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     height: 100%;
     width: 100%;
-  }
-  
-  /* Header */
-  
-  .cart {
+}
+
+/* Header */
+
+.cart {
     position: fixed;
     display: flex;
     top: 3%;
@@ -118,7 +119,7 @@ html {
 
 body {
     overflow-x: hidden;
-    
+
 }
 
 header {
@@ -130,7 +131,7 @@ header {
     background: transparent;
     background: #555555;
     position: relative;
-    
+
 }
 
 .navlist {
@@ -375,95 +376,99 @@ nav {
     cursor: pointer;
     display: none;
 }
-  
-  
-  .container {
+
+
+.container {
     max-width: 120rem;
     margin: 0 auto;
     padding: 1.5rem;
     display: flex;
-  }
-  
-  /* Columns */
-  .left-column {
+}
+
+/* Columns */
+.left-column {
     width: 65%;
     position: relative;
-  }
-  
-  .right-column {
+}
+
+.right-column {
     width: 35%;
     margin-top: 3.6rem;
-  }
-  
-  
-  /* Left Column */
-  .left-column img {
-    max-width: 100%;
-    max-height: 100%;
+}
+
+
+/* Left Column */
+.left-column img {
+    height: 45rem;
+    width: 45rem;
     position: absolute;
-    left: 0;
+    left: 20%;
     top: 0;
     opacity: 0;
     transition: all 0.3s ease;
-    margin-top: 8rem;
-  }
-  
-  .left-column img.active {
+    margin-top: 18rem;
+    object-fit: contain;
+}
+
+.left-column img.active {
     opacity: 1;
-  }
-  
-  
-  /* Right Column */
-  
-  /* Product Description */
-  .product-description {
+}
+
+
+/* Right Column */
+
+/* Product Description */
+.product-description {
     border-bottom: 0.1rem solid #E1E8EE;
     margin-top: 15rem;
-  }
-  .product-description span {
+}
+
+.product-description span {
     font-size: 3.8rem;
     color: #39b54a;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     text-decoration: none;
-  }
-  .product-description h1 {
+}
+
+.product-description h1 {
     font-weight: 300;
     font-size: 4.1rem;
     color: #43484D;
     letter-spacing: -0.2rem;
-  }
-  .product-description p {
+}
+
+.product-description p {
     font-size: 3rem;
     font-weight: 300;
     color: #ecc725;
-    
-  }
-  
-  /* Product Configuration */
-  .product-color span,
-  .cable-config span {
+
+}
+
+/* Product Configuration */
+.product-color span,
+.cable-config span {
     font-size: 1.2rem;
     font-weight: 400;
     color: #86939E;
     margin-bottom: 1.8rem;
     display: inline-block;
-  }
-  
-  /* Product Color */
-  .product-color {
+}
+
+/* Product Color */
+.product-color {
     margin-bottom: 2.7rem;
-  }
-  
-  .color-choose div {
+}
+
+.color-choose div {
     display: inline-block;
-  }
-  
-  .color-choose input[type="radio"] {
+}
+
+.color-choose input[type="radio"] {
     display: none;
-  }
-  
-  .color-choose input[type="radio"] + label span {
+}
+
+.color-choose input[type="radio"]+label span {
     display: inline-block;
     width: 2.7rem;
     height: 2.7rem;
@@ -471,43 +476,44 @@ nav {
     vertical-align: middle;
     cursor: pointer;
     border-radius: 50%;
-  }
-  
-  .color-choose input[type="radio"] + label span {
+}
+
+.color-choose input[type="radio"]+label span {
     border: 0.2rem solid #FFFFFF;
-    box-shadow: 0 0.1rem 0.3rem 0 rgba(0,0,0,0.33);
-  }
-  
-  .color-choose input[type="radio"]#jett + label span {
+    box-shadow: 0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.33);
+}
+
+.color-choose input[type="radio"]#jett+label span {
     background-color: #ecc725;
-  }
-  .color-choose input[type="radio"]#blue + label span {
+}
+
+.color-choose input[type="radio"]#blue+label span {
     background-color: #ffdf4f;
-  }
-  .color-choose input[type="radio"]#black + label span {
+}
+
+.color-choose input[type="radio"]#black+label span {
     background-color: #39b54a;
-  }
-  
-  .color-choose input[type="radio"]:checked + label span {
+}
+
+.color-choose input[type="radio"]:checked+label span {
     background-repeat: no-repeat;
     background-position: center;
-  }
-  
-  
-  /* Product Price */
-  .product-price {
+}
+
+
+/* Product Price */
+.product-price {
     display: flex;
     align-items: center;
-  }
-  
-  .product-price span {
+}
+
+.product-price span {
     font-size: 2.6rem;
-    font-weight: 300;
-    color: #43474D;
+    color: #39b54a;
     margin-right: 1.8rem;
-  }
-  
-  .cart-btn {
+}
+
+.cart-btn {
     display: inline-block;
     background-color: #ffdf4f;
     border-radius: 0.6rem;
@@ -516,89 +522,90 @@ nav {
     text-decoration: none;
     padding: 1.2rem 3rem;
     transition: all 0.5s;
-  }
-  .cart-btn:hover {
+}
+
+.cart-btn:hover {
     background-color: #ecc725;
-  }
-  
-  /* Footer Styles */
-  
-  footer {
+}
+
+/* Footer Styles */
+
+footer {
     background-color: #f80000;
     padding: 2rem;
     text-align: center;
     color: #fff;
     margin-top: 20rem;
-  }
-  
-  .footer-content {
+}
+
+.footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
-  }
-  
-  .footer-logo {
+}
+
+.footer-logo {
     width: 6rem;
     height: 6rem;
-  }
-  
-  .footer-text {
+}
+
+.footer-text {
     font-size: 1.4rem;
     margin-left: 1rem;
-  }
-  
-  .footer-links {
+}
+
+.footer-links {
     margin-bottom: 1rem;
-  }
-  
-  .footer-links a {
+}
+
+.footer-links a {
     color: #fff;
     text-decoration: none;
     margin: 0 1rem;
     transition: color 0.3s ease;
-  }
-  
-  .footer-links a:hover {
+}
+
+.footer-links a:hover {
     color: #2a0303;
-  }
-  
-  .footer-copyright {
+}
+
+.footer-copyright {
     font-size: 1rem;
     margin-top: 2rem;
-  }
-  
-  
-  /* Responsive */
-  @media (max-width: 47rem) {
+}
+
+
+/* Responsive */
+@media (max-width: 47rem) {
     .container {
-      flex-direction: column;
-      margin-top: 3.6rem;
+        flex-direction: column;
+        margin-top: 3.6rem;
     }
-  
+
     .left-column,
     .right-column {
-      width: 100%;
+        width: 100%;
     }
-  
-    .left-column img {
-      width: 18rem;
-      right: 0;
-      top: -5.6rem;
-      left: initial;
-    }
-  }
-  
-  
-  
-  @media (max-width: 33.5rem) {
-    .left-column img {
-      width: 13.2rem;
-      top: -6.8rem;
-    }
-  }
 
-  footer {
+    .left-column img {
+        width: 18rem;
+        right: 0;
+        top: -5.6rem;
+        left: initial;
+    }
+}
+
+
+
+@media (max-width: 33.5rem) {
+    .left-column img {
+        width: 13.2rem;
+        top: -6.8rem;
+    }
+}
+
+footer {
     max-height: 61rem;
     width: 100%;
     position: absolute;
@@ -613,15 +620,18 @@ nav {
     line-height: 2rem;
 }
 
-footer p,h1,h4, .email-id{
+footer p,
+h1,
+h4,
+.email-id {
     color: #999999;
 }
 
-.page-footer{
+.page-footer {
     margin-left: -21rem;
 }
 
-.phone{
+.phone {
     margin-left: -11rem;
 }
 

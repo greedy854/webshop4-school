@@ -128,7 +128,7 @@ main{
 }
 
 .games__h3{
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .games__game{
@@ -198,7 +198,7 @@ main{
     background: #39b54a;
     padding: 1rem 2rem;
     cursor: pointer;
-    margin-top: 8.5px;
+    margin-top: 0.85rem;
 }
 
 .a-popup{
