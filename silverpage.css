@@ -305,3 +305,27 @@ main{
     }
     
 }
+
+.total--price,.total--price1,.total--price2,.total--price3,.total--price4{
+    color: #555555;
+}
+
+.total--price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+p{
+    color: #555555;
+}
+.change--product{
+    color: #39b54a;
+    margin-left: 8rem;
+}
+ a{
+    text-decoration: none;
+}
+
+.change--product:hover{
+    cursor: pointer;
+}

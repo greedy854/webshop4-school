@@ -57,7 +57,7 @@ body{
 
 .checkOut__image{
     height: 100%;
-    width: auto;
+    width: 23%;
     object-fit: contain;
 
 }
@@ -144,12 +144,12 @@ main{
 
 .game__figure{
     width: 100%;
-    height: 60%;
+    height: 50%;
 }
 
 .game__img{
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: contain;
 }
 
@@ -161,9 +161,43 @@ main{
     flex-direction: column;
     gap: 0.5rem;
     justify-content: flex-end;
-
-
 }
+
+
+.size-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 0 0 1rem;
+    font-size: 1.4rem;
+    list-style-type: none;
+  }
+  
+  
+  .size-list label {
+    background: #39b54a;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    
+  }
+  
+  .size-list input {
+    display: none;
+  }
+  
+  .size-list label:hover,
+  .size-list label:focus {
+    color: #39b54a;
+    outline: 0.2rem solid white;
+    color: white;
+  }
+  
+  .size-list li:has(:checked) {
+    outline: 0.1rem solid;
+  }
+
+  
+
 .game__h2{
     font-size: 300%;
     font-weight: 700;
@@ -180,9 +214,9 @@ main{
 }
 
 .games__button{
-    width: 20rem;
+    width: 15rem;
     border: none;
-    font-size: 90%;
+    font-size: 75%;
     font-family: 'lato',sans-serif;
     color: white;
     background: #39b54a;
@@ -190,9 +224,9 @@ main{
 }
     
 .game__button{
-    width: 20rem;
+    width: 15rem;
     border: none;
-    font-size: 90%;
+    font-size: 75%;
     font-family: 'lato',sans-serif;
     color: white;
     background: #39b54a;
@@ -270,4 +304,28 @@ main{
         transform: translateY(0); 
     }
     
+}
+
+.total--price,.total--price1,.total--price2,.total--price3,.total--price4{
+    color: #555555;
+}
+
+.total--price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+p{
+    color: #555555;
+}
+.change--product{
+    color: #39b54a;
+    margin-left: 8rem;
+}
+ a{
+    text-decoration: none;
+}
+
+.change--product:hover{
+    cursor: pointer;
 }

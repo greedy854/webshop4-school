@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/dutch.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@200;400;600;800&family=Tomorrow:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="/dutch.js" defer></script>
+    <link rel="stylesheet" href="dutch.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@200;400;600;800&family=Tomorrow:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="dutch.js" defer></script>
 </head>
+
 <body>
 
-    
-    
+
+
 
     <section id="js--checkOutWindow" class="checkOut a-popup">
         <ul class="checkOut__list">
             <li class="checkOut__listItem">
                 <img src="/img/product1nl.png" alt="champagne" class="checkOut__image">
-                <p class="checkOut__title">Munt 2 euro Nederland 2001 BEATRIX KONINGIN der NEDERLANDEN</p>
+                <p class="checkOut__title">MUNT 2 EURO NEDERLAND 2001 BEATRIX</p>
                 <p id="js--amount-champagne1" class="checkOut__amount"></p>
+                <p class="total--price1" id="total--price1"></p>
             </li>
             <li class="checkOut__listItem">
                 <img src="/img/product2nl.png" alt="champagne" class="checkOut__image">
-                <p class="checkOut__title">Munt 1 euro Nederland 2001 BEATRIX KONINGIN der NEDERLANDEN</p>
+                <p class="checkOut__title">MUNT 1 EURO NEDERLAND 2001 BEATRIX</p>
                 <p id="js--amount-champagne2" class="checkOut__amount"></p>
+                <p class="total--price2" id="total--price2"></p>
             </li>
             <li class="checkOut__listItem">
                 <img src="/img/product3nl.png" alt="champagne" class="checkOut__image">
-                <p class="checkOut__title">Koningin Beatrix 5 EuroCent der Nederlanden</p>
+                <p class="checkOut__title">KONINGIN BEATRIX 5 EUROCENT</p>
                 <p id="js--amount-champagne3" class="checkOut__amount"></p>
+                <p class="total--price3" id="total--price3"></p>
             </li>
             <li class="checkOut__listItem">
-                <img src="/img/lightskin.gif" alt="champagne" class="checkOut__image">
-                <p class="checkOut__title">Lightskin</p>
-                <p id="js--amount-champagne3" class="checkOut__amount"></p>
+                <img src="/img/gold2.png" alt="champagne" class="checkOut__image">
+                <p class="checkOut__title">50 CENT EUROMUNT FRANKRIJK 1999</p>
+                <p id="js--amount-champagne4" class="checkOut__amount"></p>
+                <p class="total--price4" id="total--price4"></p>
+               
             </li>
+            <p  class="total--price" id="total--price" ></p> <a href="goldpage.html"><p class="change--product">Change</p></a>
         </ul>
     </section>
     <article class="modal a-popup" id="js--shoppingModal">
@@ -43,60 +53,130 @@
     </article>
     <button id="js--checkOutButton" class="shoppingCart">
         🛒
-    <div class="shoppingCart__message">0</div>
+        <div class="shoppingCart__message">0</div>
     </button>
     <main>
         <ul class="games">
             <li class="games__game a-popup">
                 <figure class="game__figure"><img src="/img/product1nl.png" alt="champagne" class="game__img"></figure>
-                 <section class="games__body">
-                    <h2 class="games__h2">€499,99</h2>
-                    <h3 class="games__h3">Munt 2 euro Nederland 2001 BEATRIX KONINGIN der NEDERLANDEN</h3>
+                <section class="games__body">
+                    <h2 class="games__h2">€399,99</h2>
+                    <h3 class="games__h3">MUNT 2 EURO NEDERLAND 2001 BEATRIX</h3>
+                    <div class="size-options">
+                        <p class="preview"><b>Type:</b></p>
+                        <ul class="size-list">
+                          <li>
+                            <input type="radio" name="selectedSize" id="size-xxs" value="xxs">
+                            <label for="size-xxs">New</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="selectedSize" id="size-xs" value="xs">
+                            <label for="size-xs">Used</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="selectedSize" id="size-xsss" value="xs">
+                            <label for="size-xsss">Fake</label>
+                          </li>
+            
+                      </div>
                     <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
                     <button data-product="champagne1" class="games__button">Add to Cart</button>
                     <a href="/productpage2.html"><button class="game__button">Details</button></a>
-                    <a href="/productpage1.html"><button class="game__button">Go back</button></a>
-                </section>
-                
-            </li>
-            <li class="games__game a-popup1">
-                <figure class="game__figure"><img src="/img/product1nl.png" alt="champagne" class="game__img"></figure>
-                 <section class="games__body">
-                    <h2 class="games__h2">€499,99</h2>
-                    <h3 class="games__h3">Munt 2 euro Nederland 2001 BEATRIX KONINGIN der NEDERLANDEN</h3>
-                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
-                    <button data-product="champagne1" class="games__button">Add to Cart</button>
-                    <a href="/productpage2.html"><button class="game__button">Details</button></a>
-                    <a href="/productpage1.html"><button class="game__button">Go back</button></a>
-                </section>
-                
-            </li>
-            <li class="games__game a-popup">
-                <figure class="game__figure"><img src="/img/lightskin.gif" alt="champagne" class="game__img"></figure>
-                 <section class="games__body">
-                    <h2 class="games__h2">€111519,99</h2>
-                    <h3 class="games__h3">Lightskin</h3>
-                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
-                    <button data-product="champagne2" class="games__button">Add to Cart</button>
-                    <a href="/productpage3.html"><button class="game__button">Details</button></a>
-                    <a href="/productpage1.html"><button class="game__button">Go back</button></a>
-                 </section>
-            </li>
-            <li class="games__game games__game--third a-popup">
-                <figure class="game__figure"><img src="/img/product3nl.png" alt="champagne" class="game__img"></figure>
-                <section class="games__body"> 
-                    <h2 class="games__h2">€349,99</h2>
-                    <h3 class="games__h3">Koningin Beatrix 5 EuroCent der Nederlanden</h3>
-                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
-                    <button data-product="champagne3" class="games__button">Add to Cart</button>
-                    <a href="#"><button class="game__button">Details</button></a>
                     <a href="/productpage1.html"><button class="game__button">Go back</button></a>
                 </section>
 
-                </li>
             </li>
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="/img/product2nl.png" alt="champagne" class="game__img"></figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€249,99</h2>
+                    <h3 class="games__h3">MUNT 1 EURO NEDERLAND 2001 BEATRIX</h3>
+                    <div class="size-options">
+                        <p class="preview"><b>Type:</b></p>
+                        <ul class="size-list">
+                            <li>
+                              <input type="radio" name="selectedSize" id="size-xxs" value="xxs">
+                              <label for="size-xxs">New</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="selectedSize" id="size-xs" value="xs">
+                              <label for="size-xs">Used</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="selectedSize" id="size-xsss" value="xs">
+                              <label for="size-xsss">Fake</label>
+                            </li>
             
+                      </div>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="champagne2" class="games__button">Add to Cart</button>
+                    <a href="/productpage2.html"><button class="game__button">Details</button></a>
+                    <a href="/productpage1.html"><button class="game__button">Go back</button></a>
+                </section>
+
+            </li>
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="/img/product3nl.png" alt="champagne" class="game__img"></figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€149,99</h2>
+                    <h3 class="games__h3">KONINGIN BEATRIX 5 EUROCENT</h3>
+                    <div class="size-options">
+                        <p class="preview"><b>Type:</b></p>
+                        <ul class="size-list">
+                            <li>
+                              <input type="radio" name="selectedSize" id="size-xxs" value="xxs">
+                              <label for="size-xxs">New</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="selectedSize" id="size-xs" value="xs">
+                              <label for="size-xs">Used</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="selectedSize" id="size-xsss" value="xs">
+                              <label for="size-xsss">Fake</label>
+                            </li>
+            
+                      </div>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="champagne3" class="games__button">Add to Cart</button>
+                    <a href="/productpage2.html"><button class="game__button">Details</button></a>
+                    <a href="/productpage1.html"><button class="game__button">Go back</button></a>
+                </section>
+
+            </li>
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="/img/gold2.png" alt="champagne" class="game__img"></figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€99,99</h2>
+                    <h3 class="games__h3">50 CENT EUROMUNT FRANKRIJK 1999</h3>
+                    <div class="size-options">
+                        <p class="preview"><b>Type:</b></p>
+                        <ul class="size-list">
+                          <li>
+                            <input type="radio" name="selectedSize" id="size-xxs" value="xxs">
+                            <label for="size-xxs">New</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="selectedSize" id="size-xs" value="xs">
+                            <label for="size-xs">Used</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="selectedSize" id="size-xsss" value="xs">
+                            <label for="size-xsss">Fake</label>
+                          </li>
+            
+                      </div>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="champagne4" class="games__button">Add to Cart</button>
+                    <a href="/productpage2.html"><button class="game__button">Details</button></a>
+                    <a href="/productpage1.html"><button class="game__button">Go back</button></a>
+                </section>
+
+            </li>
+            </li>
+
         </ul>
     </main>
 </body>
-</html> 
+
+</html>
