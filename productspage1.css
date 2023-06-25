@@ -1,13 +1,25 @@
-* {
-    padding: 0;
+/* Basic Styling */
+html,
+body {
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
-
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
 }
 
+/* Header */
+
+a{
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
 
 .cart {
     position: fixed;
@@ -25,22 +37,22 @@
 
 .cart i {
     display: block;
-    padding: 12px;
-    font-size: 55px;
+    padding: 1.2rem;
+    font-size: 5.5rem;
     color: #ffdf4f;
-    border-radius: 30px;
+    border-radius: 3rem;
 
 }
 
 .cart i:hover {
-    transform: translateY(-6px);
+    transform: translateY(-0.6rem);
 }
 
 .wrapper {
     width: 100%;
     max-width: 31.25rem;
     margin: 6rem auto;
-    margin-right: 700px;
+    margin-right: 70rem;
 
 }
 
@@ -49,7 +61,7 @@
     font-size: 1.1rem;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: +1.3px;
+    letter-spacing: +0.13rem;
     margin-bottom: 0.5rem;
 }
 
@@ -69,7 +81,7 @@
     color: #39b54a;
     opacity: 1;
     /* Firefox */
-    font-size: 13.5px;
+    font-size: 1.35rem;
 }
 
 :-ms-input-placeholder {
@@ -113,13 +125,7 @@
 
 
 
-html {
-    font-size: 62.5%;
-}
 
-body {
-    overflow-x: hidden;
-}
 
 header {
     width: 100%;
@@ -143,30 +149,31 @@ header {
     background: #555555;
     position: relative;
     padding: 4rem;
+    margin-top: -0.6rem;
 }
 
 .navlist a {
     color: white;
-    margin-left: 60px;
-    font-size: 19px;
+    margin-left: 6rem;
+    font-size: 1.9rem;
     font-weight: 600;
-    border-bottom: 2px solid transparent;
+    border-bottom: 0.2rem solid transparent;
     transition: all .55s ease;
 
 }
 
 .navlist a:hover {
-    border-bottom: 2px solid #39b54a;
+    border-bottom: 0.2rem solid #39b54a;
     color: #ffdf4f;
 }
 
 .logo {
-    width: 250%;
+    width: 300%;
     height: 220%;
     display: flex;
     top: 0%;
     right: 50%;
-    margin-top: 31px;
+    margin-top: 2.3rem;
 }
 
 
@@ -190,13 +197,13 @@ nav {}
 /* Dropdown Menu a (navbar) Bg Color */
 .nav-menu .dropdown a:after {
     background-color: white !important;
-    border-bottom: 2px solid #B7521B;
+    border-bottom: 0.2rem solid #B7521B;
 }
 
 /* Dropdown Menu Open a (navbar) Bg Color */
 .down-color {
     background-color: white !important;
-    border-bottom: 2px solid #ecc725;
+    border-bottom: 0.2rem solid #ecc725;
 }
 
 /* Dropdown Menu Inner Items Default Bg Color */
@@ -219,13 +226,13 @@ nav {}
 
 nav {
     position: absolute;
-    height: 82px;
+    height: 8.2rem;
     width: 100vw;
+    margin-top: -2rem;
 }
 
 .nav-menu {
     display: flex;
-    margin-top: 0px;
     padding: 0;
 }
 
@@ -241,7 +248,7 @@ nav {
     text-align: center;
     z-index: 100;
     background-color: transparent;
-    line-height: 61px;
+    line-height: 6.1rem;
     overflow: hidden;
 }
 
@@ -255,7 +262,7 @@ nav {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 
@@ -273,7 +280,7 @@ nav {
     content: "";
     position: absolute;
     display: inline-block;
-    height: 60px;
+    height: 6rem;
 }
 
 .nav-menu .norm a:after {
@@ -308,12 +315,12 @@ nav {
 .dropdown-menu {
     width: 100%;
     position: relative;
-    top: -500px;
+    top: -50rem;
     text-align: center;
     z-index: 1049;
     display: block;
     list-style: none;
-    font-size: 12px;
+    font-size: 1.2rem;
     border: none;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -322,12 +329,12 @@ nav {
 
 .dropdown-menu>li>a {
     display: block;
-    padding-top: 5.6px;
-    padding-bottom: 5.6px;
+    padding-top: 0.56rem;
+    padding-bottom: 0.56rem;
     clear: both;
     font-family: gotham light !important;
-    font-size: 15px !important;
-    line-height: 35px;
+    font-size: 1.5rem !important;
+    line-height: 3.5rem;
     color: #777 !important;
     white-space: nowrap;
 }
@@ -354,298 +361,292 @@ nav {
 #drop {
     width: 100%;
     text-align: center;
-    margin-bottom: 18.5px;
+    margin-bottom: 1.85rem;
 }
 
 .down {
     position: absolute;
     display: block;
-    top: 0px;
+    top: 0rem;
 }
 
 
 #menu-icon {
     color: black;
-    font-size: 35px;
+    font-size: 3.5rem;
     z-index: 10001;
     cursor: pointer;
     display: none;
 }
 
-#size-guide::backdrop {
-    background: rgba(190, 190, 190, 0.5);
-  }
-  
-  #size-guide {
-    padding: 3rem;
-    border: none;
-    width: clamp(300px, 80vw, 600px);
-    max-height: 480px;
-  }
-  
-  #size-guide h2 {
-    margin: 0 0 1rem;
-  }
-  
-  .close-btn {
-    filter: grayscale();
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    font-size: 1.25rem;
-  }
-  
-  /* Style things */
-  
-  :root {
-    --blue: #4a9fe0;
-    --gray-bg: #f0f0f0;
-    --peppermint: #e9f2e1;
-    --lightgreen: #fdfdf9;
-  }
-  
-  
-  
-  th,
-  td {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  th {
-    background-color: var(--peppermint);
-    font-weight: 400;
-  }
-  
-  td {
-    background-color: var(--lightgreen);
-    font-weight: 300;
-  }
-  
-  h2 {
-    margin-bottom: 0;
-    font-size: 1.6rem;
-    letter-spacing: 2px;
-    font-weight: 400;
-  }
-  
-  small {
-    max-width: 25ch;
-    display: inline-block;
-  }
-  
-  .price {
-    font-size: 1.4rem;
-    font-weight: 300;
-    margin-bottom: 0.5rem;
-  }
-  
-  hr {
-    margin: 1rem 0;
-    border-color: lightgray;
-    border-top: none;
-  }
-  
-  a,
-  #size-guide-btn {
-    font-family: "Roboto Mono", monospace;
-    color: var(--blue);
-  }
-  
-  #size-guide-btn {
-    border: 0;
-    background: none;
-    text-decoration: underline;
-    padding: 0;
-    cursor: pointer;
-  }
-  
-  figure {
-    height: 550px;
-    min-width: 300px;
-    margin: 0;
-  }
-  
-  img {
-    width: 100%;
-    height: 65%;
-    object-fit: contain;
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  .size-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    margin: 0 0 1rem;
-    font-size: 14px;
-  }
-  
-  .size-list label {
-    background: var(--gray-bg);
-    padding: 0.5rem 1rem;
-    display: inline-block;
-  }
-  
-  .size-list input {
-    display: none;
-  }
-  
-  .size-list label:hover,
-  .size-list label:focus {
-    color: #39b54a;
-    outline: 1px solid;
-  }
-  
-  .size-list li:has(:checked) {
-    outline: 1px solid;
-  }
-  
-  .product {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 0 auto;
-    max-width: 900px;
-    margin-top: 100px;
-  }
-  
-  .color-list {
-    margin-top: 1rem;
-    padding: 0;
-    display: flex;
-    gap: 0.25rem;
-  }
-  
-  .color-list li {
-    font-size: 0;
-    width: 1rem;
-    height: 1rem;
-    display: inline-block;
-    border-radius: 50%;
-    position: relative;
-    border: 1px solid;
-  }
-  
-  .quantity-label {
-    display: block;
-    margin: 1rem 0 0.5rem;
-  }
-  
-  #quantity {
-    font-size: 1.3rem;
-    max-width: 3rem;
-    margin-bottom: 1rem;
-    color: #39b54a;
-  }
-  
-  .add-to-cart-btn {
-    border: 1px solid;
-    font-weight: lighter;
-    padding: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    width: 100%;
-    background: #707070;
-    color: #39b54a;
-  }
-  
-  .measurements {
-    margin-top: 2rem;
-  }
-  
-  .measurements-guide li {
-    line-height: 1.5;
-    list-style: disc;
-    margin-left: 2rem;
-    margin-top: 1rem;
-  }
-  
-  .sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
 
-  .about button {
-    background: #ffdf4f;
-    color: black;
-    border: 2px solid transparent;
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: flex;
+}
+
+/* Columns */
+.left-column {
+    width: 65%;
+    position: relative;
+}
+
+.right-column {
+    width: 35%;
+    margin-top: -3.6rem;
+}
+
+
+/* Left Column */
+.left-column img {
+    height: 45rem;
+    width: 45rem;
+    position: absolute;
+    left: 20%;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    margin-top: 13rem;
+    object-fit: contain;
+}
+
+.left-column img.active {
+    opacity: 1;
+}
+
+
+/* Right Column */
+
+/* Product Description */
+.product-description {
+    border-bottom: 0.1rem solid #E1E8EE;
+    margin-top: 15rem;
+}
+
+.product-description span {
+    font-size: 3.8rem;
+    color: #39b54a;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
     text-decoration: none;
-    padding: 10px 30px;
+}
+
+.product-description h1 {
+    font-weight: 300;
+    font-size: 4.1rem;
+    color: #43484D;
+    letter-spacing: -0.2rem;
+}
+
+.product-description p {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #ecc725;
+
+}
+
+/* Product Configuration */
+.product-color span,
+.cable-config span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #86939E;
+    margin-bottom: 1.8rem;
+    display: inline-block;
+}
+
+/* Product Color */
+.product-color {
+    margin-bottom: 2.7rem;
+}
+
+.color-choose div {
+    display: inline-block;
+}
+
+.color-choose input[type="radio"] {
+    display: none;
+}
+
+.color-choose input[type="radio"]+label span {
+    display: inline-block;
+    width: 2.7rem;
+    height: 2.7rem;
+    margin: -0.1rem 0.4rem 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.color-choose input[type="radio"]+label span {
+    border: 0.2rem solid #FFFFFF;
+    box-shadow: 0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.33);
+}
+
+.color-choose input[type="radio"]#jett+label span {
+    background-color: #ecc725;
+}
+
+.color-choose input[type="radio"]#blue+label span {
+    background-color: #ffdf4f;
+}
+
+.color-choose input[type="radio"]#black+label span {
+    background-color: #39b54a;
+}
+
+.color-choose input[type="radio"]:checked+label span {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Product Price */
+.product-price {
+    display: flex;
+    align-items: center;
+}
+
+.product-price span {
+    font-size: 2.6rem;
+    color: #39b54a;
+    margin-right: 1.8rem;
+}
+
+.cart-btn {
+    display: inline-block;
+    background-color: #ffdf4f;
+    border-radius: 0.6rem;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    transition: all 0.5s;
+}
+
+.cart-btn:hover {
+    background-color: #ecc725;
+}
+
+.details--p{
+    font-size: 3rem;
+    margin-top: -0.1rem;
+    color: #39b54a;
+}
+
+.details--p1{
+    font-size: 1.6rem;
+    margin-top: -0.1rem;
+    color: #43484D;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #f80000;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 20rem;
+}
+
+.footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 17px;
-    font-weight: bold;
-    width: 80px;
-    height: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-
+    margin-bottom: 2rem;
 }
 
-a{
+.footer-logo {
+    width: 6rem;
+    height: 6rem;
+}
+
+.footer-text {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #fff;
     text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
 }
 
-.about button:hover {
-    background-color: #ecc725;
-    color: black;
-    cursor: pointer;
-    transition: 0.4s;
+.footer-links a:hover {
+    color: #2a0303;
 }
 
-p{
-    font-size: 13px;
+.footer-copyright {
+    font-size: 1rem;
+    margin-top: 2rem;
 }
 
-.details{
-    color: #39b54a;
-    border: 1px solid #555555;
-    font-size: 14.5px;
+
+/* Responsive */
+@media (max-width: 47rem) {
+    .container {
+        flex-direction: column;
+        margin-top: 3.6rem;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+    .left-column img {
+        width: 18rem;
+        right: 0;
+        top: -5.6rem;
+        left: initial;
+    }
+}
+
+
+
+@media (max-width: 33.5rem) {
+    .left-column img {
+        width: 13.2rem;
+        top: -6.8rem;
+    }
 }
 
 footer {
-    max-height: 610px;
+    max-height: 61rem;
     width: 100%;
     position: absolute;
     /* bottom: 0;weghalen als niet werkt*/
     background: #313139;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
-    padding: 100px 0 30px;
-    border-top-left-radius: 125px;
-    font-size: 13px;
+    padding: 10rem 0 3rem;
+    border-top-left-radius: 12.5rem;
+    font-size: 1.3rem;
     height: 85vh;
-    line-height: 20px;
-    margin-top: 100px;
+    line-height: 2rem;
 }
 
-footer p,h1,h4, .email-id{
+footer p,
+h1,
+h4,
+.email-id {
     color: #999999;
+}
+
+.page-footer {
+    margin-left: -21rem;
+}
+
+.phone {
+    margin-left: -11rem;
 }
 
 .row {
@@ -659,7 +660,7 @@ footer p,h1,h4, .email-id{
 
 .col {
     flex-basis: 25%;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .col:nth-child(2),
@@ -668,14 +669,14 @@ footer p,h1,h4, .email-id{
 }
 
 .logo {
-    width: 250px;
-    margin-bottom: 30px;
-    margin-left: -53px;
+    width: 25rem;
+    margin-bottom: 3rem;
+    margin-left: -5.3rem;
 }
 
 .col h3 {
     width: fit-content;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -685,30 +686,30 @@ footer p,h1,h4, .email-id{
 
 .place {
     width: fit-content;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 .col p {
-    margin-right: 120px;
+    margin-right: 12rem;
 }
 
 
 
 .email-id {
     width: fit-content;
-    border-bottom: 1px solid #ccc;
-    margin: 20px 0;
+    border-bottom: 0.1rem solid #ccc;
+    margin: 2rem 0;
 }
 
 ul li {
     list-style: none;
-    margin-bottom: 12px;
+    margin-bottom: 1.2rem;
 }
 
 ul li a {
@@ -718,18 +719,18 @@ ul li a {
 
 
 form {
-    padding-bottom: 15px;
+    padding-bottom: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 50px;
+    border-bottom: 0.1rem solid #ccc;
+    margin-bottom: 5rem;
     gap: 1rem;
 }
 
 form .fas {
-    font-size: 18px;
-    margin-right: 10px;
+    font-size: 1.8rem;
+    margin-right: 1rem;
 }
 
 form input {
@@ -749,20 +750,20 @@ form button {
 }
 
 form button .fas {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #ccc;
 }
 
 .social-icons .fab {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     text-align: center;
-    line-height: 40px;
-    font-size: 20px;
+    line-height: 4rem;
+    font-size: 2rem;
     color: #000;
     background: #fff;
-    margin-right: 15px;
+    margin-right: 1.5rem;
     cursor: pointer;
 }
 
@@ -777,52 +778,52 @@ form button .fas {
 hr {
     width: 100%;
     border: 0;
-    border-bottom: 1px solid #ccc;
-    margin: 20px auto;
+    border-bottom: 0.1rem solid #ccc;
+    margin: 2rem auto;
 }
 
 .copyright {
     text-align: center;
     background: #26262e;
-    min-height: 135px;
+    min-height: 13.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: -90px;
-    margin-top: -20px;
+    margin-bottom: -9rem;
+    margin-top: -2rem;
 
 }
 
 .underline {
     width: 100%;
-    height: 5px;
+    height: 0.5rem;
     background: #39b54a;
-    border-radius: 3px;
+    border-radius: 0.3rem;
     position: absolute;
-    top: 25px;
+    top: 2.5rem;
     left: 0;
     overflow: hidden;
 }
 
 footer a:hover {
-    border-bottom: 2px solid #39b54a;
+    border-bottom: 0.2rem solid #39b54a;
 }
 
 .underline span {
-    width: 15px;
+    width: 1.5rem;
     height: 100%;
     background: #ffdf4f;
-    border-radius: 3px;
+    border-radius: 0.3rem;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 1rem;
     animation: moving 2s linear infinite;
 }
 
 
 @keyframes moving {
     0% {
-        left: -20px
+        left: -2rem
     }
 
     100% {
@@ -835,7 +836,7 @@ button i {
     color: #ccc;
 }
 
-@media (max-width:700px) {
+@media (max-width:70rem) {
     footer {
         bottom: unset;
     }

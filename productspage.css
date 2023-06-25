@@ -9,6 +9,18 @@ body {
 
 /* Header */
 
+a{
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 .cart {
     position: fixed;
     display: flex;
@@ -113,14 +125,7 @@ body {
 
 
 
-html {
-    font-size: 62.5%;
-}
 
-body {
-    overflow-x: hidden;
-
-}
 
 header {
     width: 100%;
@@ -144,9 +149,7 @@ header {
     background: #555555;
     position: relative;
     padding: 4rem;
-    text-decoration: none;
-    list-style: none;
-    margin-top: -0.1rem;
+    margin-top: -0.6rem;
 }
 
 .navlist a {
@@ -156,8 +159,7 @@ header {
     font-weight: 600;
     border-bottom: 0.2rem solid transparent;
     transition: all .55s ease;
-    text-decoration: none;
-    list-style: none;
+
 }
 
 .navlist a:hover {
@@ -166,12 +168,12 @@ header {
 }
 
 .logo {
-    width: 250%;
+    width: 300%;
     height: 220%;
     display: flex;
     top: 0%;
     right: 50%;
-    margin-top: 3.1rem;
+    margin-top: 2.3rem;
 }
 
 
@@ -226,12 +228,12 @@ nav {
     position: absolute;
     height: 8.2rem;
     width: 100vw;
+    margin-top: -2rem;
 }
 
 .nav-menu {
     display: flex;
     padding: 0;
-    margin-top: -1rem;
 }
 
 
@@ -393,7 +395,7 @@ nav {
 
 .right-column {
     width: 35%;
-    margin-top: 3.6rem;
+    margin-top: -3.6rem;
 }
 
 
@@ -406,7 +408,7 @@ nav {
     top: 0;
     opacity: 0;
     transition: all 0.3s ease;
-    margin-top: 18rem;
+    margin-top: 13rem;
     object-fit: contain;
 }
 
@@ -526,6 +528,18 @@ nav {
 
 .cart-btn:hover {
     background-color: #ecc725;
+}
+
+.details--p{
+    font-size: 3rem;
+    margin-top: -0.1rem;
+    color: #39b54a;
+}
+
+.details--p1{
+    font-size: 1.6rem;
+    margin-top: -0.1rem;
+    color: #43484D;
 }
 
 /* Footer Styles */

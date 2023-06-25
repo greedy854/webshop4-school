@@ -1,4 +1,16 @@
-$("#click-slide").hover(function doALoadOfStuff() {
+$(document).ready(function() {
+
+    $('.color-choose input').on('click', function() {
+        var Cointype = $(this).attr('data-image');
+
+        $('.active').removeClass('active');
+        $('.left-column img[data-image = ' + Cointype + ']').addClass('active');
+        $(this).addClass('active');
+    });
+
+  });
+
+  $("#click-slide").hover(function doALoadOfStuff() {
 
     if ($(window).width() >= 768) {
 
@@ -36,23 +48,3 @@ $("#click-slide").hover(function doALoadOfStuff() {
 
     }
 });
-$('button').click( function(event) {
-    if ($(this).hasClass('submitted')){
-      event.preventDefault();
-      return;
-    }
-    $(this).addClass('submitted');
-    $(this).html('Added to cart!');
-    
-    setTimeout(goback, 3000);
-  });
-  
-  function goback() {
-    $('button').removeClass('submitted').html('Submit stuff');
-  }
-  $('button').mousedown(function(){
-    if ($(this).hasClass('submitted'))
-    $(this).addClass('error');
-  }).mouseup(function(){
-    $(this).removeClass('error');
-  });

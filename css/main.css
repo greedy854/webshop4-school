@@ -8,6 +8,13 @@
 
 }
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
 
 .cart {
     position: fixed;
@@ -113,13 +120,7 @@
 
 
 
-html {
-    font-size: 62.5%;
-}
 
-body {
-    overflow-x: hidden;
-}
 
 header {
     width: 100%;
@@ -161,12 +162,12 @@ header {
 }
 
 .logo {
-    width: 250%;
-    height: 220%;
+    width: 350%;
+    height: 280%;
     display: flex;
     top: 0%;
     right: 50%;
-    margin-top: 3.1rem;
+    margin-top: 4.3rem;
 }
 
 
@@ -616,6 +617,8 @@ p {
     color: #555555;
 }
 
+
+
 .part--section h1{
     color: #39b54a;
     display: flex;
@@ -645,6 +648,10 @@ p {
 
 .part--section h2 {
     font-size: 0.86rem;
+}
+
+.h2--details{
+    font-size: 1.4rem !important;
 }
 
 .part--section h1 {
