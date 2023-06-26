@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
     $('.color-choose input').on('click', function() {
@@ -9,6 +10,18 @@ $(document).ready(function() {
     });
 
   });
+
+  $('button').click( function(event) {
+    if ($(this).hasClass('submitted')){
+      event.preventDefault();
+      return;
+    }
+    $(this).addClass('submitted');
+    $(this).html('Added to cart!');
+    
+    setTimeout(goback, 3000);
+  });
+  
 
   $("#click-slide").hover(function doALoadOfStuff() {
 

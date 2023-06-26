@@ -14,6 +14,7 @@ html {
 
 body {
     overflow-x: hidden;
+    width: 100%;
 }
 
 .cart {
@@ -43,82 +44,6 @@ body {
     transform: translateY(-0.6rem);
 }
 
-.wrapper {
-    width: 100%;
-    max-width: 31.25rem;
-    margin: 6rem auto;
-    margin-right: 70rem;
-
-}
-
-.label {
-    color: #39b54a;
-    font-size: 1.1rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: +0.13rem;
-    margin-bottom: 0.5rem;
-}
-
-.searchBar {
-    width: 120%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: white;
-    margin-bottom: 1.5rem;
-}
-
-.searchBar:hover {}
-
-::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #39b54a;
-    opacity: 1;
-    /* Firefox */
-    font-size: 1.35rem;
-}
-
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: white;
-}
-
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: white;
-}
-
-
-#searchQueryInput {
-    width: 100%;
-    height: 4.8rem;
-    background: #707070;
-    outline: none;
-    border: none;
-    border-radius: 1.625rem;
-    padding: 0 3.5rem 0 1.5rem;
-    font-size: 1.4rem;
-    color: white;
-}
-
-
-#searchQuerySubmit {
-    width: 3.5rem;
-    height: 2.8rem;
-    margin-left: -3.5rem;
-    background: none;
-    border: none;
-    outline: none;
-}
-
-#searchQuerySubmit:hover {
-    cursor: pointer;
-}
-
-
-
-
 
 
 
@@ -131,7 +56,7 @@ header {
     background: transparent;
     background: #555555;
     position: relative;
-
+    
 }
 
 .navlist {
@@ -162,54 +87,49 @@ header {
 }
 
 .logo {
-    width: 350%;
-    height: 280%;
+    width: 250%;
+    height: 220%;
     display: flex;
     top: 0%;
     right: 50%;
-    margin-top: 4.3rem;
+    margin-top: 3.1rem;
 }
 
 
-nav {}
+nav {
+ }
 
-/* Navbar Default State Bg Color */
-.nav-menu .norm a:before {
-    background-color: #ffdf4f;
-}
+     /* Navbar Default State Bg Color */
+    .nav-menu .norm a:before {
+     background-color: #ffdf4f;}
 
-/* Navbar Hover State Bg Color */
-.nav-menu .norm a:after {
-    background-color: #ecc725;
-}
+    /* Navbar Hover State Bg Color */
+    .nav-menu .norm a:after {
+     background-color: #ecc725;}
 
-/* Dropdown Menu a (navbar) Bg Color */
-.nav-menu .dropdown a:before {
-    background-color: #ffdf4f !important;
-}
+    /* Dropdown Menu a (navbar) Bg Color */
+    .nav-menu .dropdown a:before {
+     background-color:#ffdf4f !important;
+     }
 
-/* Dropdown Menu a (navbar) Bg Color */
-.nav-menu .dropdown a:after {
-    background-color: white !important;
-    border-bottom: 0.2rem solid #B7521B;
-}
+    /* Dropdown Menu a (navbar) Bg Color */
+    .nav-menu .dropdown a:after {
+     background-color:white !important;
+     border-bottom: 0.2rem solid #B7521B;}
 
-/* Dropdown Menu Open a (navbar) Bg Color */
-.down-color {
-    background-color: white !important;
-    border-bottom: 0.2rem solid #ecc725;
-}
+    /* Dropdown Menu Open a (navbar) Bg Color */
+    .down-color {
+     background-color: white !important;
+     border-bottom: 0.2rem solid #ecc725;}
 
-/* Dropdown Menu Inner Items Default Bg Color */
-.dropdown-menu>li>a {
-    background-color: #ecc725 !important;
-}
+    /* Dropdown Menu Inner Items Default Bg Color */
+    .dropdown-menu > li > a {
+     background-color: #ecc725 !important;}
 
-/* Dropdown Menu Inner Items Hover/Focus Bg Color */
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
-    background-color: #ffdf4f !important;
-}
+    /* Dropdown Menu Inner Items Hover/Focus Bg Color */
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus {
+     background-color: #ffdf4f !important;}
 
 /* - - - - End Color Theme - - - - */
 
@@ -219,14 +139,15 @@ nav {}
 /* + + + + Navbar Body + + + + */
 
 nav {
-    position: absolute;
-    height: 8.2rem;
-    width: 100vw;
+ position: absolute;
+max-height: 30rem;
+ width: 100vw;
 }
 
 .nav-menu {
-    display: flex;
-    padding: 0;
+ display: flex;
+ margin-top: -0.2rem;
+ padding: 0;
 }
 
 
@@ -236,33 +157,33 @@ nav {
 /* + + + + Nav Buttons + + + + */
 
 .nav-menu li {
-    display: block;
-    flex-grow: 1;
-    text-align: center;
-    z-index: 100;
-    background-color: transparent;
-    line-height: 6.1rem;
-    overflow: hidden;
+ display: block;
+ flex-grow: 1;
+ text-align: center;
+ z-index: 100;
+ background-color: transparent;
+ line-height: 6.1rem;
+ overflow: hidden;
 }
 
 
 
 .nav-menu li a {
-    position: relative;
-    display: inline-block;
-    z-index: 50;
-    width: 100%;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.5rem;
+ position: relative;
+ display: inline-block;
+ z-index: 50;
+ width: 100%;
+ color: black;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 1.5rem;
 }
 
 
 /* + + Style for Top-Level li's Only + + */
 
 .nav-menu .li-1 {
-    width: 100%;
+ width: 100%;
 }
 
 
@@ -270,31 +191,31 @@ nav {
 
 .nav-menu .norm a:after,
 .nav-menu .norm a:before {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    height: 6rem;
+ content: "";
+ position: absolute;
+ display: inline-block;
+ height: 6rem;
 }
 
 .nav-menu .norm a:after {
-    left: 50%;
-    width: 0%;
-    z-index: -20;
-    -webkit-transition: .6s ease all .2s;
-    transition: .6s ease all .2s;
+ left: 50%;
+ width: 0%;
+ z-index: -20;
+ -webkit-transition: .6s ease all .2s;
+ transition: .6s ease all .2s;
 }
 
 .nav-menu .norm a:hover:after {
-    left: 0%;
-    width: 100%;
-    -webkit-transition: .2s ease-out all;
-    transition: .2s ease-out all;
+ left: 0%;
+ width: 100%;
+ -webkit-transition: .2s ease-out all;
+ transition: .2s ease-out all;
 }
 
 .nav-menu .norm a:before {
-    left: 0%;
-    width: 100%;
-    z-index: -50;
+ left: 0%;
+ width: 100%;
+ z-index: -50;
 }
 
 /* - - - - End Nav Button Pseudos - - - - */
@@ -303,64 +224,66 @@ nav {
 
 /*  + + + + Dropdown Styles + + + + */
 
-.dropdown {}
+.dropdown {
+ 
+}
 
 .dropdown-menu {
-    width: 100%;
-    position: relative;
-    top: -50rem;
-    text-align: center;
-    z-index: 1049;
-    display: block;
-    list-style: none;
-    font-size: 1.2rem;
-    border: none;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    padding: 0;
+ width: 100%;
+ position: relative;
+ top: -50rem;
+ text-align: center;
+ z-index: 1049;
+ display: block;
+ list-style: none;
+ font-size: 1.2rem;
+ border: none;
+ -webkit-background-clip: padding-box;
+ background-clip: padding-box;
+ padding: 0;
 }
 
-.dropdown-menu>li>a {
-    display: block;
-    padding-top: 0.56rem;
-    padding-bottom: 0.56rem;
-    clear: both;
-    font-family: gotham light !important;
-    font-size: 1.5rem !important;
-    line-height: 3.5rem;
-    color: #777 !important;
-    white-space: nowrap;
+.dropdown-menu > li > a {
+ display: block;
+ padding-top: 0.56rem;
+ padding-bottom: 0.56rem;
+ clear: both;
+ font-family: gotham light !important;
+ font-size: 1.5rem !important;
+ line-height: 3.5rem;
+ color: #777 !important;
+ white-space: nowrap;
 }
 
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
-    text-decoration: none;
-    color: black !important;
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+ text-decoration: none;
+ color: black !important;
 }
 
-.dropdown-menu>li>a:after,
-.dropdown-menu>li>a:before {
-    display: none !important;
+.dropdown-menu > li > a:after,
+.dropdown-menu > li > a:before {
+ display: none !important;
 }
 
 
 /* + + jQuery Modified Dropdown Styles + + */
 
 #click-slide {
-    z-index: 3;
-    padding-bottom: 0 !important;
+ z-index: 3;
+ padding-bottom: 0 !important;
 }
 
 #drop {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1.85rem;
+ width: 100%;
+ text-align: center;
+ margin-bottom: 1.85rem;
 }
 
 .down {
-    position: absolute;
-    display: block;
-    top: 0rem;
+ position: absolute;
+ display: block;
+ top: 0rem;
 }
 
 
@@ -374,8 +297,8 @@ nav {
 
 .hero {
     height: 100%;
+    padding: 9rem;
     width: 100%;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -662,6 +585,76 @@ p {
     color: #39b54a;
     font-size: 1.9rem;
 }
+
+.parts1 {
+    width: 32rem;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    height: auto;
+    margin: 1.8rem;
+
+}
+
+.part--section1 {
+    border: rgb(196, 196, 196) 0.1rem solid;
+}
+
+.part--section1 h2,
+p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #555555;
+}
+
+
+
+.part--section1 h1{
+    color: #39b54a;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.part1 {
+    width: 27rem;
+    height: 30rem;
+    transition: 0.2s transform;
+    flex-grow: 1;
+    /* Used if the image is unavailable */
+}
+
+.part1:hover {
+    transform: scale(1.02) translateY(-0.7rem);
+    cursor: pointer;
+}
+
+.part1>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.part--section1 h2 {
+    font-size: 0.86rem;
+}
+
+.h2--details1{
+    font-size: 1.4rem !important;
+}
+
+.part--section1 h1 {
+    font-size: 1.2rem;
+}
+
+.part--p1 {
+    color: #39b54a;
+    font-size: 1.9rem;
+}
+
 
 
 .image img {
@@ -980,7 +973,7 @@ a {
 }
 
 footer {
-    max-height: 61rem;
+    height: 61rem;
     width: 100%;
     position: absolute;
     /* bottom: 0;weghalen als niet werkt*/
@@ -1322,56 +1315,374 @@ button i {
 
     .scroll-down {
         display: none;
-    }
+   }
 }
-
-@media (max-width: 99rem) {
-    #menu-icon {
-        display: block;
-    }
-
-    .navlist {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 30rem;
-        height: 40vh;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 5rem 2rem;
-        transition: all .55s ease;
-    }
-
-    .navlist a {
-        margin-left: 0;
-        display: block;
-        margin: 0.7rem 0;
-    }
-
-    .navlist.open {
-        right: 0;
-    }
-}
-
 @media (max-width: 68rem) {
     .hero-img img {
         width: 100%;
         height: auto;
     }
 }
+@media screen and (max-width:64.125rem) {
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        width: 100%;
+    }
+    .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 223px;
+    }
+    .label{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .navlist a{
+        font-size: 1.2rem;
+    }
+    .navlist{
+        height: 5rem;
+    }
+    .searchBar{
+        width: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading{
+        display: flex;
+        justify-content: space-between;
+    }
+    .heading-text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 75px;
+        width: 50%;
+}
+    .heading img{
+        margin-left: 60px;
+        width: 40rem;
+    }
+    .heading-text1{
+        margin-left: -50px;
+        font-size: 2.5rem;
+    }
+    .heading-text2{
+        margin-left: -50px;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .part--section1{
+        display: none;
+    }
+    .cart i{
+        }
+    footer{
+        height: 170%;
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+        height: 100%; 
+    }
+    .col p,h4{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;}
+    .reviews{
+        display: flex;
+        flex-direction: column;
+    }
+    .container img{
+        width: 40rem;
+        margin-right: 25rem;
+    }
+}
+@media screen and (max-width:48.9375rem) {
+    .wrapper{
+        margin-left: 60px;
+    }
+    .navlist a{
+        font-size: 1.6rem;
+    }
 
-::-webkit-scrollbar {
-    width: 1.5rem;
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-3{
+        width: 10rem;
+        margin-right: 65rem;
+    }
+    .hero-text h5{
+        font-size: 2.4rem;
+    }
+    .hero-text h1{
+        font-size: 2.4rem;
+    }
+    .hero-text h4{
+        font-size: 2rem;
+    }
+    .part--section{
+        width: 21.3rem;
+        height: 40rem;
+    }
+    .part>img {
+        width: 70%;
+        height: 100%;
+        object-fit: contain;
+    }
+    img.heading-img{
+        margin-left: -20px;
+    }
+.container {
+    margin-bottom: 10rem;
 }
 
-::-webkit-scrollbar-track {
-    background: #d1e5ff;
+    .container h1{
+        margin-left:10rem;
+        font-size: 3rem;
+    }
+    .container p{
+        margin-left: 6rem;
+        font-size: 1.2rem;
+    }
+    .container .about{
+        margin-left: 3rem;
+    }
+    .container img{
+        margin-left: 3rem;
+        width: 40rem;
+    }
 }
 
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to right, #616161, #9bc5c3);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+@media screen and (max-width:47.375rem) {
+    .navlist a{
+        font-size: 1rem;
+    }
+    .part--section{
+        width: 18.8rem;
+        height: 40rem;
+    }
+    .part>img {
+        width: 60%;
+        height: 100%;
+        object-fit: contain;
+    }
 
+}
 
+@media screen and (max-width:43.75rem) {
+    .part--section{
+        width: 20.3rem;
+        height: 40rem;
+    }
+    .part>img {
+        width: 70%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width:43.6875rem) {
+    .part--section{
+        width: 18.3rem;
+        height: 40rem;
+    }
+    .part>img {
+        width: 60%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width:47.3125rem){
+    .parts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .part--section{
+        width: 35rem;
+    }
+    .part>img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .part>img{
+        margin-left: 3rem;
+    }
+}
+@media screen and (max-width:38.0625rem){
+    
+    .heading-text{
+        margin-bottom: -8rem;
+    }
+
+    img.heading-img{
+        width: 40%;
+    }
+    
+}
+@media screen and (max-width:35rem){
+    .navlist a{
+        font-size: 0.7rem;
+    }
+    .nav-menu li{
+        font-size: 1rem;
+    }
+    footer{
+        height: 140%;
+    }
+}
+@media screen and (max-width:34.625rem){
+   .heading-text1 {
+        font-size: 1.4rem;
+    }
+
+    .searchBar{
+        margin-right: 8rem;
+    }
+
+    .button{
+        width: 7rem;
+        height: 5rem;
+        margin-right: 8rem;
+    }
+}
+@media screen and (max-width:32.3125rem){
+    .container h1{
+        margin-left: 10rem;
+    }
+    .container p{
+        margin-left: 10rem;
+    }
+    .container .about{
+        margin-left: 8rem;
+    }
+    .searchBar{
+        margin-right: 16rem;
+    }
+    .container img{
+        width: 20rem;
+        margin-right: 31rem;
+    }
+    .hero-3 img{
+        width: 30rem;
+    }
+    .navlist a{
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0;
+        margin: 2.5rem;
+    }
+    .nav-menu li a{
+        font-size: 0.75rem;
+        
+    }
+
+    .hero{
+        padding: 0;
+    }
+
+    .hero h1,h5,h4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h1{
+        font-size: 2rem;
+    }
+    .hero h5{
+        font-size: 2rem;
+    }
+    .hero h4{
+        width: 90%;
+        font-size: 1.4rem;
+    }
+    .hero-text a.ctaa{
+        width: 22rem;
+    }
+    .heading{
+        padding: 5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .heading-text{
+        width: 45%;
+        
+    }
+    .button{
+        margin-left:22rem;
+    }
+    .wrapper{
+        display: none;
+    }
+
+    .hero img{
+        width: 300%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer h4{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 29rem;
+
+    }
+
+    .part>img{
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width:30rem){
+    footer h4{
+        margin-right: 26rem;
+       
+    }
+    footer{
+        height: 180%;
+        width: 100%;
+    }
+    .hero{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+
+    .hero h5,h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .hero img{
+
+        margin-left: 25rem;
+    }
 }

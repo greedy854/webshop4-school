@@ -211,6 +211,7 @@ main{
 .game__stars{
     color: gold;
     font-size: 130%;
+    padding: 1rem;
 }
 
 .games__button{
@@ -232,7 +233,7 @@ main{
     background: #39b54a;
     padding: 1rem 2rem;
     cursor: pointer;
-    margin-top: 0.85rem;
+   
 }
 
 .a-popup{
@@ -320,7 +321,7 @@ p{
 }
 .change--product{
     color: #39b54a;
-    margin-left: 8rem;
+   margin-top: -2.5rem;
 }
  a{
     text-decoration: none;
@@ -328,4 +329,43 @@ p{
 
 .change--product:hover{
     cursor: pointer;
+}
+
+@media screen and (max-width:41.1875rem){
+    
+    body{
+        width: 100%;
+    }
+
+    .games{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .game__img{
+        width: 15rem;
+        
+    }
+    .game__figure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    
+   
+    .btn-game{
+        display: flex;
+        gap: 0.7rem;
+    }
+    .games__button{
+        
+    }
+    .game__button{
+        height: 100%;
+        
+    }
 }

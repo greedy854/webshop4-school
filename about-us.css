@@ -473,7 +473,7 @@ footer {
     width: 100%;
     position: absolute;
     /* bottom: 0;weghalen als niet werkt*/
-    background: linear-gradient(to right, #232526, #414345);
+    background: #313139;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     padding: 10rem 0 3rem;
@@ -672,5 +672,363 @@ button i {
     .text h1 {
         font-size: 6rem;
         margin-bottom: 2.5rem;
+    }
+}
+
+@media screen and (max-width:64.125rem) {
+
+    html{
+        overflow-x: hidden;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 223px;
+    }
+    .label{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .navlist a{
+        font-size: 1.2rem;
+    }
+    .navlist{
+        height: 5rem;
+    }
+    .searchBar{
+        width: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .heading-text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 75px;
+        width: 50%;
+}
+
+    .heading img{
+        margin-left: 60px;
+        width: 40rem;
+    }
+    .heading-text1{
+        margin-left: -50px;
+        font-size: 2.5rem;
+    }
+    .heading-text2{
+        margin-left: -50px;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .part--section1{
+        display: none;
+    }
+    .cart i{
+        
+    }
+
+    footer{
+        height: 170%;
+    }
+
+    .col{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+    }
+    .col p,h4{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+       
+    }
+    .reviews{
+        display: flex;
+        flex-direction: column;
+    }
+    .container img{
+        width: 40rem;
+        margin-right: 25rem;
+    }
+}
+@media screen and (max-width:48.9375rem) {
+    .wrapper{
+        margin-left: 60px;
+    }
+    .navlist a{
+        font-size: 1.6rem;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-3{
+        width: 10rem;
+        margin-right: 65rem;
+    }
+    .hero-text h5{
+        font-size: 2.4rem;
+    }
+    .hero-text h1{
+        font-size: 2.4rem;
+    }
+    .hero-text h4{
+        font-size: 2rem;
+    }
+    .part--section{
+        width: 21.3rem;
+        height: 40rem;
+    }
+    .part>img {
+        width: 70%;
+        height: 100%;
+        object-fit: contain;
+    }
+    img.heading-img{
+        margin-left: -20px;
+    }
+.container {
+    margin-bottom: 10rem;
+}
+
+    .container h1{
+        margin-left:10rem;
+        font-size: 3rem;
+    }
+    .container p{
+        margin-left: 6rem;
+        font-size: 1.2rem;
+    }
+    .container .about{
+        margin-left: 3rem;
+    }
+    .container img{
+        margin-left: 3rem;
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width:47.375rem) {
+    .navlist a{
+        font-size: 1rem;
+    }
+    .part--section{
+        width: 18.8rem;
+        height: 40rem;
+    }
+    .part>img {
+        width: 60%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+}
+
+@media screen and (max-width:43.75rem) {
+    .part--section{
+        width: 20.3rem;
+        height: 40rem;
+    }
+    .part>img {
+        width: 70%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width:43.6875rem) {
+    .part--section{
+        width: 18.3rem;
+        height: 40rem;
+    }
+    .part>img {
+        width: 60%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width:47.3125rem){
+    .parts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .part--section{
+        width: 35rem;
+    }
+    .part>img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .part>img{
+        margin-left: 3rem;
+    }
+}
+@media screen and (max-width:38.0625rem){
+    
+    .heading-text{
+        margin-bottom: -8rem;
+    }
+
+    img.heading-img{
+        width: 40%;
+    }
+    
+}
+@media screen and (max-width:35rem){
+    .navlist a{
+        font-size: 0.7rem;
+    }
+    .nav-menu li{
+        font-size: 1rem;
+    }
+    footer{
+        height: 140%;
+    }
+}
+@media screen and (max-width:34.625rem){
+   .heading-text1 {
+        font-size: 1.4rem;
+    }
+
+    .searchBar{
+        margin-right: 8rem;
+    }
+
+    .button{
+        width: 7rem;
+        height: 5rem;
+        margin-right: 8rem;
+    }
+}
+@media screen and (max-width:32.3125rem){
+    .container h1{
+        margin-left: 10rem;
+    }
+    .container p{
+        margin-left: 10rem;
+    }
+    .container .about{
+        margin-left: 8rem;
+    }
+    .searchBar{
+        margin-right: 16rem;
+    }
+    .container img{
+        width: 20rem;
+        margin-right: 31rem;
+    }
+    .hero-3 img{
+        width: 30rem;margin-left: 20rem;
+    }
+    .navlist a{
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0;
+        margin: 2.5rem;
+    }
+    .nav-menu li a{
+        font-size: 0.75rem;
+        
+    }
+
+    .hero{
+        padding: 0;
+    }
+
+    .hero h1,h5,h4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h1{
+        font-size: 2rem;
+    }
+    .hero h5{
+        font-size: 2rem;
+    }
+    .hero h4{
+        width: 90%;
+        font-size: 1.4rem;
+    }
+    .hero-text a.ctaa{
+        width: 22rem;
+    }
+    .heading{
+        padding: 5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .heading-text{
+        width: 45%;
+        margin-left: 5rem;
+    }
+    .button{
+        margin-left:22rem;
+    }
+    .wrapper{
+        display: none;
+    }
+
+    .hero img{
+        width: 300%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer h4{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 29rem;
+
+    }
+
+    .part>img{
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width:30rem){
+    footer h4{
+        margin-right: 26rem;
+       
+    }
+    footer{
+        height: 180%;
+        width: 100%;
+    }
+    .hero{
+        padding: 0;
     }
 }
