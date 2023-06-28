@@ -10,7 +10,7 @@ window.scrollTo(0, 0);
 
 setInterval(function () {
     document.getElementsByTagName("main")[0].style.overflow = "auto";
-    document.getElementsByClassName("main")[0].style.opacity = "1";
+
 }, 1500)
 
 

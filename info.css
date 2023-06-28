@@ -13,7 +13,9 @@ body {
     background: white;
 }
 
-
+html{
+    font-size: 62.5%;
+}
 
 
 
@@ -370,9 +372,9 @@ nav {
     top: 0rem;
 }
 
-#menu-icon {
+#menu-icon { 
     color: black;
-    font-size: 35px;
+    font-size: 3.5rem;
     z-index: 10001;
     cursor: pointer;
     display: none;
@@ -388,18 +390,18 @@ nav {
 
 .about .content img {
     height: auto;
-    width: 600px;
+    width: 60rem;
     max-width: 100%;
 }
 
 .text {
-    width: 550px;
+    width: 55rem;
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0 1rem;
 }
 
 .content {
-    width: 1280px;
+    width: 128rem;
     max-width: 95%;
     margin: 0 auto;
     display: flex;
@@ -410,45 +412,45 @@ nav {
 
 .text h1 {
     color: #ffcc74;
-    font-size: 85px;
-    margin-bottom: 20px;
+    font-size: 8.5rem;
+    margin-bottom: 2rem;
     text-transform: capitalize;
 }
 
 .text h5 {
     color: black;
-    font-size: 25px;
-    margin-bottom: 25px;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
     text-transform: capitalize;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
 }
 
 .text p {
     color: black;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 1px;
-    margin-bottom: 45px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 4.5rem;
 }
 
 .about button {
     background: #ffcc74;
     color: black;
-    border: 2px solid transparent;
+    border: 0.2rem solid transparent;
     text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 30px;
-    font-size: 17px;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    font-size: 1.7rem;
     font-weight: bold;
-    width: 140px;
-    height: 45px;
+    width: 14rem;
+    height: 4.5rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 11px;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
+    letter-spacing: 0.25rem;
     font-weight: 500;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4.5rem;
+    box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
@@ -457,7 +459,7 @@ nav {
 .about button:hover {
     transform: scale(1.2);
     background-color: transparent;
-    border: 2px solid #ffcc74;
+    border: 0.2rem solid #ffcc74;
     color: #ffcc74;
     transition: .4s;
     cursor: pointer;
@@ -474,10 +476,10 @@ footer {
      background: #313139;;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
-    padding: 100px 0 30px;
-    border-top-left-radius: 125px;
-    font-size: 13px;
-    line-height: 20px;
+    padding: 10rem 0 3rem;
+    border-top-left-radius: 12.5rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
 }
 
 .row {
@@ -491,7 +493,7 @@ footer {
 
 .col {
     flex-basis: 25%;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .col:nth-child(2),
@@ -500,26 +502,26 @@ footer {
 }
 
 .logo {
-    width: 80px;
-    margin-bottom: 30px;
-    margin-left: -23px;
+    width: 8rem;
+    margin-bottom: 3rem;
+    margin-left: -2.3rem;
 }
 
 .col h3 {
     width: fit-content;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     position: relative;
 }
 
 .email-id {
     width: fit-content;
-    border-bottom: 1px solid #ccc;
-    margin: 20px 0;
+    border-bottom: 0.1rem solid #ccc;
+    margin: 2rem 0;
 }
 
 ul li {
     list-style: none;
-    margin-bottom: 12px;
+    margin-bottom: 1.2rem;
 }
 
 ul li a {
@@ -529,18 +531,18 @@ ul li a {
 
 
 form {
-    padding-bottom: 15px;
+    padding-bottom: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 50px;
+    border-bottom: 0.1 solid #ccc;
+    margin-bottom: 5rem;
     gap: 1rem;
 }
 
 form .fas {
-    font-size: 18px;
-    margin-right: 10px;
+    font-size: 1.8rem;
+    margin-right: 1rem;
 }
 
 form input {
@@ -560,20 +562,20 @@ form button {
 }
 
 form button .fas {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #ccc;
 }
 
 .social-icons .fab {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     text-align: center;
-    line-height: 40px;
-    font-size: 20px;
+    line-height: 4rem;
+    font-size: 2rem;
     color: #000;
     background: #fff;
-    margin-right: 15px;
+    margin-right: 1.5rem;
     cursor: pointer;
 }
 
@@ -588,8 +590,8 @@ form button .fas {
 hr {
     width: 90%;
     border: 0;
-    border-bottom: 1px solid #ccc;
-    margin: 20px auto;
+    border-bottom: 0.1rem solid #ccc;
+    margin: 2rem auto;
 }
 
 .copyright {
@@ -598,35 +600,35 @@ hr {
 
 .underline {
     width: 100%;
-    height: 5px;
+    height: 0.5rem;
     background: #39b54a;
-    border-radius: 3px;
+    border-radius: 0.3rem;
     position: absolute;
-    top: 25px;
+    top: 2.5rem;
     left: 0;
     overflow: hidden;
 }
 
 footer a:hover {
-    border-bottom: 2px solid #39b54a;
+    border-bottom: 0.2rem solid #39b54a;
     text-decoration: none;
 }
 
 .underline span {
-    width: 15px;
+    width: 1.5rem;
     height: 100%;
     background: #ffdf4f;
-    border-radius: 3px;
+    border-radius: 0.3rem;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 1rem;
     animation: moving 2s linear infinite;
 }
 
 
 @keyframes moving {
     0% {
-        left: -20px
+        left: -2rem
     }
 
     100% {
@@ -641,7 +643,7 @@ button i {
     color: #ccc;
 }
 
-@media (max-width:700px) {
+@media (max-width:70rem) {
     footer {
         bottom: unset;
     }
@@ -657,22 +659,22 @@ button i {
     }
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 118rem) {
     .about {
         width: 100%;
         height: auto;
-        padding: 70px 0;
+        padding: 7rem 0;
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 65rem) {
     .about .content img {
-        margin-bottom: 35px;
+        margin-bottom: 3.5rem;
     }
 
     .text h1 {
-        font-size: 60px;
-        margin-bottom: 25px;
+        font-size: 6rem;
+        margin-bottom: 2.5rem;
     }
 }
 @media screen and (max-width:64.125rem) {
@@ -690,7 +692,7 @@ button i {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 223px;
+    margin-left: 22.3rem;
     }
     .label{
         display: flex;
@@ -718,20 +720,20 @@ button i {
     .heading-text{
         display: flex;
         flex-direction: column;
-        margin-left: 75px;
+        margin-left: 7.5rem;
         width: 50%;
 }
 
     .heading img{
-        margin-left: 60px;
+        margin-left: 6rem;
         width: 40rem;
     }
     .heading-text1{
-        margin-left: -50px;
+        margin-left: -5rem;
         font-size: 2.5rem;
     }
     .heading-text2{
-        margin-left: -50px;
+        margin-left: -5rem;
         font-size: 1rem;
         display: flex;
         flex-direction: column;
@@ -756,7 +758,7 @@ button i {
     .col p,h4{
         display: flex;
         justify-content: flex-start;
-        margin-left: 10px;
+        margin-left: 1rem;
        
     }
     .reviews{
@@ -770,7 +772,7 @@ button i {
 }
 @media screen and (max-width:48.9375rem) {
     .wrapper{
-        margin-left: 60px;
+        margin-left: 6rem;
     }
     .navlist a{
         font-size: 1.6rem;
@@ -804,7 +806,7 @@ button i {
         object-fit: contain;
     }
     img.heading-img{
-        margin-left: -20px;
+        margin-left: -2rem;
     }
 .container {
     margin-bottom: 10rem;

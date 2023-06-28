@@ -690,7 +690,7 @@ button i {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 223px;
+    margin-left: 22.3rem;
     }
     .label{
         display: flex;
@@ -718,20 +718,20 @@ button i {
     .heading-text{
         display: flex;
         flex-direction: column;
-        margin-left: 75px;
+        margin-left: 7.5rem;
         width: 50%;
 }
 
     .heading img{
-        margin-left: 60px;
+        margin-left: 6rem;
         width: 40rem;
     }
     .heading-text1{
-        margin-left: -50px;
+        margin-left: -5rem;
         font-size: 2.5rem;
     }
     .heading-text2{
-        margin-left: -50px;
+        margin-left: -5rem;
         font-size: 1rem;
         display: flex;
         flex-direction: column;
@@ -756,7 +756,7 @@ button i {
     .col p,h4{
         display: flex;
         justify-content: flex-start;
-        margin-left: 10px;
+        margin-left: 1rem;
        
     }
     .reviews{
@@ -770,7 +770,7 @@ button i {
 }
 @media screen and (max-width:48.9375rem) {
     .wrapper{
-        margin-left: 60px;
+        margin-left: 6rem;
     }
     .navlist a{
         font-size: 1.6rem;
@@ -804,7 +804,7 @@ button i {
         object-fit: contain;
     }
     img.heading-img{
-        margin-left: -20px;
+        margin-left: -2rem;
     }
 .container {
     margin-bottom: 10rem;

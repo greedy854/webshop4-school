@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    font-size: 62.5%;
   }
   body {
     margin:0;
@@ -13,17 +14,17 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 400px;
-    padding: 40px;
+    width: 40rem;
+    padding: 4rem;
     transform: translate(-50%, -50%);
     background: black;
     box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;
+    box-shadow: 0 1.5 2.5rem rgba(0,0,0,.6);
+    border-radius: 1rem;
   }
   
   .login-box h2 {
-    margin: 0 0 30px;
+    margin: 0 0 3rem;
     padding: 0;
     color: #fff;
     text-align: center;
@@ -35,12 +36,12 @@ html {
   
   .login-box .user-box input {
     width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
+    padding: 1rem 0;
+    font-size: 1.6rem;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 0.1rem solid #fff;
     outline: none;
     background: transparent;
   }
@@ -48,8 +49,8 @@ html {
     position: absolute;
     top:0;
     left: 0;
-    padding: 10px 0;
-    font-size: 16px;
+    padding: 1rem 0;
+    font-size: 1.6rem;
     color: #fff;
     pointer-events: none;
     transition: .5s;
@@ -57,34 +58,34 @@ html {
   
   .login-box .user-box input:focus ~ label,
   .login-box .user-box input:valid ~ label {
-    top: -20px;
+    top: -2rem;
     left: 0;
     color: #fdfc47;
-    font-size: 12px;
+    font-size: 1.2rem;
   }
   
   .login-box form a {
     position: relative;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     color: #fdfc47;
-    font-size: 16px;
+    font-size: 1.6rem;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px
+    margin-top: 4rem;
+    letter-spacing: 0.4rem;
   }
   
   .login-box a:hover {
     background: #24fe41;
     color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #fdfc47,
-                0 0 25px #fdfc47,
-                0 0 50px #fdfc47,
-                0 0 100px #fdfc47;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem #fdfc47,
+                0 0 2.5rem #fdfc47,
+                0 0 5rem #fdfc47,
+                0 0 10rem #fdfc47;
   }
   
   .login-box a span {
@@ -96,7 +97,7 @@ html {
     top: 0;
     left: -100%;
     width: 100%;
-    height: 2px;
+    height: 0.2rem;
     background: linear-gradient(90deg, transparent, #fdfc47);
     animation: btn-anim1 1s linear infinite;
   }
@@ -113,7 +114,7 @@ html {
   .login-box a span:nth-child(2) {
     top: -100%;
     right: 0;
-    width: 2px;
+    width: 0.2rem;
     height: 100%;
     background: linear-gradient(180deg, transparent, #fdfc47);
     animation: btn-anim2 1s linear infinite;
@@ -133,7 +134,7 @@ html {
     bottom: 0;
     right: -100%;
     width: 100%;
-    height: 2px;
+    height: 0.2rem;
     background: linear-gradient(270deg, transparent, #39b54a);
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
@@ -151,7 +152,7 @@ html {
   .login-box a span:nth-child(4) {
     bottom: -100%;
     left: 0;
-    width: 2px;
+    width: 0.2rem;
     height: 100%;
     background: linear-gradient(360deg, transparent, #39b54a);
     animation: btn-anim4 1s linear infinite;
@@ -179,7 +180,7 @@ html {
     text-decoration-color:  #24fe41;
   }
   .sign-up p{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: sans-serif;
     color: #24fe41;
     
